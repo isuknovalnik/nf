@@ -1,9 +1,8 @@
 .footer {
   display: block;
-  // - min-width: 320px;
-  // - min-height: 974px;
+  width: $hd;
+  min-height: 200px;
   margin: 0;
   padding: 0;
-  // -color: $footer-color;
-  // - background-color: $footer-back;
+  outline: 1px solid red;
 }
