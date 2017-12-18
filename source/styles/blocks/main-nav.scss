@@ -3,4 +3,9 @@
   flex-basis: 165px;
   flex-shrink: 0;
   outline: 1px solid yellow;
+  
+  &__logo {
+    fill: $main-mav-color;
+  }
+  
 }
