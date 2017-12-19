@@ -1,4 +1,6 @@
 $robotocond: 'Roboto Condensed', 'Arial', sans-serif;
+$museosans: 'Museo Sans Cyrl 500', 'Arial', sans-serif;
+$proximanova: 'Proxima Nova Light', 'Arial', sans-serif;
 
 @font-face {
   font-family: 'Roboto Condensed';
@@ -25,4 +27,20 @@ $robotocond: 'Roboto Condensed', 'Arial', sans-serif;
     url('../fonts/Robotocondensedbold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl 500';
+  src: local('Museo Sans Cyrl 500'), 
+    url('../fonts/MuseoSansCyrl_1.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Light';
+  src: local('Proxima Nova Lt'), ('ProximaNova Light'),
+    url('../fonts/ProximaNova-Light.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
 }
