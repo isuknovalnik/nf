@@ -1,0 +1,32 @@
+.pagination {
+  margin-left: -5px;
+}
+
+.pagination__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.pagination__link {
+  display: block;
+  width: 21px;
+  height: 25px;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 2px;
+  &:hover,
+  &--active {
+    color: #52d387;
+    border-bottom: #52d387 solid 2px;
+  }
+}
