@@ -1,0 +1,42 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 440px;
+  height: 100px;
+  margin: 0;
+  margin-top: 50px;
+  margin-right: 18px;
+  padding: 0;
+  list-style: none;
+  font-family: $proximanova;
+
+  &__item {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: $footer-text;
+    
+    &_email {
+      text-decoration: none;
+      
+      &:hover {
+        color: $nf-green;
+      }
+    }
+  }
+  
+  &__symbol {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    margin-bottom: -3px;
+    fill: $footer-icons;
+  }
+  
+  &__item_email:hover &__symbol {
+    fill: currentColor;
+  }
+}
+

@@ -1,0 +1,39 @@
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 110px;
+  height: 100px;
+  margin: 0;
+  margin-top: 50px;
+  margin-right: 86px;
+  padding: 0;
+  list-style: none;
+  font-family: $proximanova;
+
+  &__item {
+    display: block;
+    margin: 0;
+  }
+  
+  &__link {
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    text-decoration: none;
+    color: $footer-text;
+    
+    &:hover {
+      color: $nf-green;
+    }
+  }
+  
+  &__item_active &__link {
+    color: $footer-active-item;
+  }
+  
+  &__item_active &__link:hover{
+    cursor: default;
+  }
+}

@@ -1,8 +1,19 @@
 .footer {
-  display: block;
+  display: flex;
   width: $hd;
   min-height: 200px;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  font-family: $proximanova;
+  color: $footer-text;
+  background-color: $footer-back;
+  
+  &__logo {
+    width: 89px;
+    height: 100px;
+    margin-left: 427px;
+    margin-top: 50px;
+    margin-right: 68px;
+    fill: $footer-icons;
+  }
 }
