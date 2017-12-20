@@ -1,3 +1,12 @@
 .main-logo {
   display: block;
+  width: 280px;
+  height: 196px;
+  background: url('../images/logo-main.png') center top no-repeat,
+    url('../images/logo-main-text.png') center bottom no-repeat;
+  background-size: 105px 117px, auto;
+
+  &__text {
+    font-size: 0;
+  }
 }

@@ -2,4 +2,71 @@
   display: block;
   width: 100%;
   min-height: 880px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url(../images/background.png);
+  
+  &__main-descr {
+    width: 652px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    margin-left: 469px;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: $text-color;
+    overflow: hidden;
+  }
+  
+  &__reg-button {
+    position: relative;
+    display: block;
+    width: 225px;
+    height: 40px;
+    margin-left: 683px;
+    margin-top: 60px;
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    color: $text-color;
+    background-image: linear-gradient(135deg, $gradient-start, $nf-green);
+    box-shadow: 0 0 10px 0 $nf-green;
+    
+    &:before {
+      position: absolute;
+      display: block;
+      content: '';
+      z-index: 1;
+      top: -31px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      width: 652px;
+      background-image: linear-gradient(to right, transparent 0, $nf-green 50%, transparent 100%);
+    }
+    
+    &:hover {
+      color: $nf-green;
+      background: $page-color;
+    }
+  }
+  
+  &__advantages {
+    
+  }
+  
+  &__advantages-wrap {
+    display: flex;
+  }
+  
+  & .main-logo {
+    margin: 0;
+    margin-top: 82px;
+    margin-left: 654px;
+    margin-bottom: 2px;
+  }
 }
