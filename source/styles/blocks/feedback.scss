@@ -1,0 +1,54 @@
+.feedback {
+  &__inner {
+    margin-left: 4px;
+    padding-top: 19px;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    background-color: $feedback-bgr-color;
+    color: $feedback-text-color;
+    width: 685px;
+    padding: 20px 68px 10px 112px;
+    font-size: 18px;
+    @include box-shadow(3px, 3px, 5px, rgba(82,211,135,0.5));
+    position: relative;
+    margin-left: 80px;
+    margin-bottom: 70px;
+    &:last-child {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__person-name {
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  &__person-work {
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  &__info {
+    font-weight: 300;
+    line-height: 27px;
+    color: $feedback-info-color;
+  }
+
+  &__user-image {
+    position: absolute;
+    left: -78px;
+    top: -49px;
+    filter: drop-shadow(4px 4px 2px rgba(173,230,197,1));
+  }
+
+  .pagination {
+    margin-left: -9px;
+  }
+}
