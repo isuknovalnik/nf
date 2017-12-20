@@ -75,25 +75,19 @@ gulp.task("images", function() {
 });
 
 gulp.task("symbols", function() {
+  var cleanSymbols = del("build/sprite/symbols.svg");
   var svgs = gulp
     .src("source/icons/*.svg")
     .pipe(svgmin())
     .pipe(svgstore({
-        inlineSvg: true
+       inlineSvg: true
     }))
     .pipe(rename("symbols.svg"))
-    .pipe(gulp.dest("source/icons"));
+    .pipe(gulp.dest("build/sprite"));
 
   return gulp
     .src('build/*.html')
     .pipe(inject(svgs, { transform: fileContents }))
-    .pipe(gulp.dest('build'));
-});
-
-gulp.task("svginject", function() {
-  var sprite = gulp.src('source/icons/symbols.svg');
-  gulp.src('build/*.html')
-    .pipe(inject(sprite, { transform: fileContents }))
     .pipe(gulp.dest('build'));
 });
 
@@ -111,7 +105,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("copyhtml", function() {
-  var sprite = gulp.src('source/icons/symbols.svg');
+  var sprite = gulp.src('build/sprite/symbols.svg');
   return gulp.src([
     "source/*.html"
   ], {
@@ -130,7 +124,7 @@ gulp.task("debug", function(fn) {
   run(
     "clean",
     "copy",
-    "svginject",
+    "symbols",
     "styles",
     "jscript",
     fn
@@ -141,7 +135,7 @@ gulp.task("build", function(fn) {
   run(
     "clean",
     "copy",
-    "svginject",
+    "symbols",
     "images",
     "styles",
     "jscript",
