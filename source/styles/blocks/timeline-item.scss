@@ -1,3 +1,114 @@
 .timeline-item {
+  position: relative;
+  width: 750px;
   display: block;
+  margin-left: 97px;
+  margin-top: 59px;
+  
+  &_short {
+    width: 575px;
+  }
+  
+  &:before {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    content: '';
+    top: -10px;
+    left: -103px;
+    width: 6px;
+    height: 6px;
+    background-color: $page-color;
+    border: 2px solid $nf-green;
+    transform: rotate(45deg);
+  }
+  
+  &_active:before {
+    top: -13px;
+    left: -107px;
+    width: 13px;
+    height: 13px;
+  }
+
+  &_active:after {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    content: '';
+    top: -8px;
+    left: -102px;
+    width: 7px;
+    height: 7px;
+    background-color: $nf-green;
+    transform: rotate(45deg);
+  }
+  
+  &:nth-child(1) {
+    margin-top: 126px;
+  }
+
+  &:nth-child(2),
+  &:nth-child(3) {
+    margin-top: 64px;
+  }
+  
+  &:nth-child(5),
+  &:nth-child(6) {
+    margin-top: 80px;
+  }
+  
+  &:nth-child(8) {
+    margin-top: 50px;
+  }
+  
+  &__year {
+    position: absolute;
+    z-index: 2;
+    top: -20px;
+    left: -80px;
+    width: 88px;
+    height: 26px;
+    padding-top: 2px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: $text-color;
+    text-shadow: 0 0 30px #52d387;
+    border: 1px solid $nf-green;
+  }
+  
+  &_active &__year {
+    z-index: 4;
+    text-shadow: none;
+    background-color: $nf-green;
+  }
+  
+  &__text {
+    position: relative;
+    z-index: 3;
+    width: 720px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 300;
+    color: $inner-text-color;
+    background-color: $inner-back;
+    
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  &_short &__text {
+    width: 545px;
+    padding-bottom: 4px;
+  }
+  
+  &__link {
+    color: $nf-green;
+  }
 }

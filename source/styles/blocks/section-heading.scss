@@ -1,3 +1,9 @@
 .section-heading {
   display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: $text-color;
+  text-shadow: 3px 3px 3px rgba(82, 211, 135, 0.6);
 }

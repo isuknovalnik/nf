@@ -1,3 +1,42 @@
 .message {
   display: block;
+  
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1140px;
+  }
+  
+  &__wrap {
+    
+  }
+  
+  &__input {
+    
+  }
+  
+  &__text {
+    
+  }
+  
+  &__btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-family: $museosans;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    color: $text-color;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(135deg, $gradient-start, $nf-green);
+    box-shadow: 0 0 10px 0 $nf-green;
+    
+    &:hover {
+      color: $nf-green;
+      background: $page-color;
+    }
+  }
 }
