@@ -2,4 +2,11 @@
   background: #071525 url('../images/background_marketing.png') no-repeat 100% 0;
   padding-top: 143px;
   width: 1756px;
+  &__section-heading {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    @include text-shadow(3px, 3px, 3px, rgba(174,223,198,1));
+    color: #000;
+  }
 }
