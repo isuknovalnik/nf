@@ -1,0 +1,30 @@
+.upper-info {
+  padding-left: 325px;
+  width: 936px;
+  margin-bottom: 100px;
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+    padding-right: 35px;
+    &--upper {
+      width: 553px;
+      height: auto;
+      padding-left: 32px;
+      padding-right: 0;
+      margin-top: 6px;
+    }
+    &--short {
+      width: 523px;
+      height: auto;
+      padding-left: 32px;
+      padding-right: 0;
+      margin-top: 6px;
+    }
+  }
+}
