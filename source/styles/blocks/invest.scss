@@ -1,0 +1,20 @@
+.invest {
+  background: #071525 url('../images/background_invest.png') no-repeat 100% 0;
+  padding-top: 143px;
+  width: 1756px;
+  &__section-heading {
+    font-size: 36px;
+    margin-top: 0;
+    width: 340px;
+    @include text-shadow(3px, 3px, 3px, rgba(174,223,198,1));
+    &--black {
+      color: #000;
+      margin-bottom: 40px;
+    }
+    &--white {
+      color: #fff;
+      @include text-shadow(3px, 3px, 3px, rgba(62,120,93,1));
+      margin-bottom: 20px;
+    }
+  }
+}

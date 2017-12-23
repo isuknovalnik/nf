@@ -1,0 +1,79 @@
+.level-program {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 295px;
+  width: 1070px;
+
+  &__card {
+    background-color: #fff;
+    @include box-shadow(3px, 3px, 5px, rgba(82,211,135,0.5));
+    position: relative;
+    text-align: right;
+    color: #000;
+    padding: 8px 9px 10px 10px;
+    width: 175px;
+  }
+
+  &__title {
+    width: 142px;
+    height: 161px;
+    font-weight: 700;
+    font-size: 36px;
+    color: white;
+    background: url('../images/hexagon.png') no-repeat 100% 0;
+    position: absolute;
+    left: -68px;
+    top: -42px;
+    text-align: center;
+    padding-top: 54px;
+  }
+
+  &__rate {
+    font-size: 14px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e8e9ec;
+  }
+
+  &__rate-deposit {
+    margin-bottom: 20px;
+  }
+
+  &__rate-text {
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__rate-percent {
+    font-size: 36px;
+    font-weight: 700;
+    display: block;
+  }
+
+  &__rate-deposit-inner {
+    display: block;
+  }
+
+  &__heading {
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-size: 24px;
+    &--red {
+      color: #ea330f;
+    }
+  }
+}
