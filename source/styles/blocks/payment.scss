@@ -1,7 +1,15 @@
 .payment {
-  padding-left: 323px;
   padding-bottom: 70px;
-  width: 948px;
+  padding-top: 128px;
+  position: relative;
+  background: url('../images/payment_bgr.png') no-repeat 100% 0;
+  position: relative;
+  margin-top: -520px;
+  z-index: 4000;
+
+  &__inner {
+    padding: 0 484px 0 323px
+  }
 
   &__sistems-text {
     font-size: 18px;
