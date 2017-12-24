@@ -8,6 +8,11 @@
   color: $footer-text;
   background-color: $footer-back;
   
+  &_int {
+    width: 100%;
+    min-height: 150px;
+  }
+  
   &__logo {
     width: 89px;
     height: 100px;
@@ -15,5 +20,22 @@
     margin-top: 50px;
     margin-right: 68px;
     fill: $footer-icons;
+  }
+  
+  &_int &__logo {
+    margin-left: 167px;
+    margin-top: 30px;
+  }
+  
+  &_int .footer-links {
+    margin-top: 30px;
+  }
+  
+  &_int .contacts {
+    margin-top: 30px;
+  }
+  
+  &_int .social-links {
+    margin-top: 32px;
   }
 }

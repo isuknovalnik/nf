@@ -5,4 +5,9 @@
   font-family: $segoeui;
   color: $site-nav-color;
   background-color: $main-nav-back;
+  
+  &_int {
+    width: 260px;
+    flex-basis: 260px;
+  }
 }

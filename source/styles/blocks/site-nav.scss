@@ -93,6 +93,27 @@
       margin-bottom: -2px;
     }
     
+    &_deposits {
+      height: 21px;
+    }
+    
+    &_withdraw {
+      height: 21px;
+    }
+    
+    &_operations {
+      width: 14px;
+      height: 19px;
+    }
+    
+    &__payment-req {
+      width: 24px;
+      height: 15px;
+    }
+   
+    &_refer {
+      width: 22px;
+    }
   }
 }
 

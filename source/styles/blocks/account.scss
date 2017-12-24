@@ -1,0 +1,11 @@
+.account {
+  width: 100%;
+  height: 769px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-image: url('../images/background-account.jpg');
+  
+  &_green {
+    background-image: url('../images/background-account-green.jpg');
+  }
+}
