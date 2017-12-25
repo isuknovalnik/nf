@@ -11,10 +11,12 @@
   }
     
   &_int {
-    width: 199px;
-    height: 85px;
-    background-size: contain;
+    width: 220px;
+    height: 140px;
+    margin: 0 auto;
+    background-size: 199px 85px;
     background-image: url(../images/logo-page-int.png);
+    border-bottom: 1px solid $main-nav-border-int;
   }
 }
 

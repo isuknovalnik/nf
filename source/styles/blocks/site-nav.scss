@@ -6,6 +6,10 @@
   padding: 0;
   list-style: none;
   font-family: $segoeui;
+  
+  &_int {
+    margin-top: 29px;
+  }
 
   &__item {
     position: relative;
@@ -37,6 +41,23 @@
     }
   }
   
+  &_int &__item {
+    padding-left: 22px;
+  }
+  
+  &_int &__item_operations {
+    padding-left: 25px;
+  }
+  
+  &_int &__item_active {
+    background-image: linear-gradient(to left, $site-nav-selection-int, transparent);
+  }
+
+  &_int &__item_active:after {
+    background-color: $nf-int;
+  }
+
+  
   &__link {
     display: block;
     height: 30px;
@@ -52,12 +73,21 @@
     }
   }
   
+  &_int &__link {
+    color: $site-nav-int;
+  }
+  
+  &_int &__link:hover {
+    color: $nf-int;
+  }
+  
   &__item_home &__link {
     font-size: 0;
     line-height: 0;
   }
   
-  &__item_active &__link {
+  &__item_active &__link,
+  &_int &__item_active &__link {
     color: $main-nav-selection;
   }
   
@@ -115,5 +145,32 @@
       width: 22px;
     }
   }
+  
+  &_int &__symbol {
+    margin-right: 14px;
+    color: $site-nav-int-symbol;
+  }
+  
+  &_int &__symbol_operations {
+    margin-right: 17px;
+  }
+  
+  &_int &__link:hover &__symbol {
+    color: $nf-int;
+  }
+
+  &_int &__item_active &__symbol {
+    color: $main-nav-selection;
+  }
+  
+  &_int &__link:hover &__symbol {
+    color: $nf-int;
+  }
+  
+  &_int &__item_active &__link:hover &__symbol {
+    color: $main-nav-selection;
+  }
+  
+  
 }
 
