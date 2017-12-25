@@ -1,0 +1,14 @@
+.account-user {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 87px;
+  margin-left: 129px;
+  margin-right: 527px;
+  padding-top: 13px;
+  font-family: $segoeui;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: $account-user-text;
+}
