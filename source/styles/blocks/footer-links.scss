@@ -29,6 +29,10 @@
     }
   }
   
+  .footer_int &__link:hover {
+    color: $nf-int;
+  }
+  
   &__item_active &__link {
     color: $footer-active-item;
   }

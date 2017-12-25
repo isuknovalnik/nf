@@ -26,6 +26,10 @@
       margin-top: 6px;
     }
   }
+  
+  .footer_int &__link:hover {
+    color: $nf-int;
+  }
 
   &__symbol {
     fill: currentColor;
