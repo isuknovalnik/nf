@@ -1,0 +1,41 @@
+.about {
+  display: block;
+  width: 100%;
+  min-height: 880px;
+  background: url('../images/background-top.jpg') left top no-repeat;
+  
+  &__header {
+    min-height: 380px;
+    margin-top: 128px;
+    
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+
+  &__main-descr {
+    width: 950px;
+    margin: 0;
+    padding: 0;
+    margin-left: 322px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $text-color;
+  
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  & .page-logo {
+    float: left;
+    margin-top: 15px;
+    margin-left: 323px;
+    margin-right: 33px;
+    margin-bottom: 28px;
+  }
+}
