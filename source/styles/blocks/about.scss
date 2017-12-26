@@ -31,6 +31,94 @@
     }
   }
   
+  &__details {
+    min-height: 320px;
+    color: $inner-text-color;
+    background-color: $inner-back;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url('../images/hexagons.png');
+  }
+  
+  &__details-text {
+    
+  }
+  
+  &__principles {
+    
+    & p {
+      min-height: 60px;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 20px;
+      padding-left: 90px;
+      background-repeat: no-repeat;
+      background-position: left top;
+      
+      &:nth-child(1) {
+        background-image: url('../images/principle1.png');
+      }
+      
+      &:nth-child(2) {
+        background-image: url('../images/principle2.png');
+      }
+      
+      &:nth-child(3) {
+        background-image: url('../images/principle3.png');
+      }
+    }
+  }
+  
+  &__using {
+    color: $inner-text-color;
+    background-color: $inner-back;
+  }
+  
+  &__using-wrap {
+    display: flex;
+  }
+  
+  &__using-text {
+    
+  }
+  
+  &__working {
+    
+  }
+  
+  &__working-text {
+    
+  }
+  
+  &__training {
+    min-height: 520px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url('../images/training.png');
+  }
+  
+  &__training-wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__training-item {
+    color: $nf-green;
+  }
+  
+  &__conclusion {
+    color: $inner-text-color;
+    background-color: $inner-back;
+  }
+  
+  &__conclusion-text {
+    
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
   & .page-logo {
     float: left;
     margin-top: 15px;
