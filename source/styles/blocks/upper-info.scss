@@ -2,25 +2,37 @@
   padding-left: 325px;
   width: 936px;
   margin-bottom: 100px;
-  &__wrap {
-    display: flex;
-    flex-direction: row;
+
+  .page-logo {
+    float: left;
+    margin: -6px 30px 36px 0;
+    margin-bottom: 36px;
   }
+
+  &__wrap {
+    min-height: 132px;
+  }
+
   &__text {
     font-size: 18px;
     line-height: 22px;
-    margin-top: 10px;
+    margin-top: 0;
     padding-right: 35px;
     &--upper,
     &--short {
-      width: 553px;
+      width: 910px;
       height: auto;
       padding-left: 32px;
       padding-right: 0;
       margin-top: 6px;
     }
     &--short {
-      width: 527px;
+      margin-bottom: 0;
+    }
+    &--bottom {
+      content: '';
+      clear: both;
+      display: block;
     }
   }
 }
