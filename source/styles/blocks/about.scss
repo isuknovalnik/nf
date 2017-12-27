@@ -164,11 +164,25 @@
   }
   
   &__working {
-    
+    margin-top: 158px;
+    margin-left: 322px;
   }
   
   &__working-text {
+    width: 1010px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400px;
     
+    & p {
+      margin: 0;
+      padding: 0;
+      padding-bottom: 28px;
+      
+      &:first-child {
+        padding-top: 42px;
+      }
+    }
   }
   
   &__training {
