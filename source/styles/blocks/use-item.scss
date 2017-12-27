@@ -1,0 +1,55 @@
+.use-item {
+  display: block;
+  width: 360px;
+  height: 130px;
+  color: $inner-text-color;
+  background-repeat: no-repeat;
+  background-position: center top;
+  
+  &:nth-child(1) {
+    background-image: url(../images/use1.png);
+  }
+  
+  &:nth-child(2) {
+    background-image: url(../images/use2.png);
+  }
+  
+  &:nth-child(3) {
+    background-image: url(../images/use3.png);
+  }
+
+/*  
+  &__heading {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 119px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    
+    &:after {
+      position: absolute;
+      z-index: 1;
+      display: block;
+      content: '';
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 2px;
+      background-color: $nf-green;
+    }
+  }
+  
+  &__text {
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    text-align: center;
+  }
+*/
+}
