@@ -78,25 +78,37 @@
   }
   
   &__principles {
+    width: 970px;
+    margin-top: 136px;
+    margin-left: 322px;
     
     & p {
-      min-height: 60px;
+      min-height: 48px;
       margin: 0;
       padding: 0;
+      margin-top: 20px;
       margin-bottom: 20px;
-      padding-left: 90px;
+      padding-left: 98px;
+      padding-top: 12px;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 400;
       background-repeat: no-repeat;
-      background-position: left top;
       
       &:nth-child(1) {
+        margin-top: 34px;
+        background-position: 12px top;
         background-image: url('../images/principle1.png');
       }
       
       &:nth-child(2) {
+        background-position: 14px top;
         background-image: url('../images/principle2.png');
       }
       
       &:nth-child(3) {
+        padding-top: 2px;
+        background-position: 10px top;
         background-image: url('../images/principle3.png');
       }
     }
