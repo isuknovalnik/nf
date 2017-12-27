@@ -2,7 +2,9 @@
   display: block;
   width: 100%;
   min-height: 880px;
-  background: url('../images/background-top.jpg') left top no-repeat;
+  background: url('../images/background-about.png') left 904px no-repeat,
+    url('../images/background-top.jpg') left top no-repeat,
+    url('../images/background-about-bottom.jpg') left 1850px no-repeat;
   
   &__header {
     min-height: 380px;
