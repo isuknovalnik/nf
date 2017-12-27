@@ -32,16 +32,49 @@
   }
   
   &__details {
+    position: relative;
     min-height: 320px;
+    margin-top: 123px;
     color: $inner-text-color;
-    background-color: $inner-back;
+    
+    &:before {
+      position: absolute;
+      z-index: 1;
+      display: block;
+      content: '';
+      top: 104px;
+      left: 0;
+      right: 0;
+      height: 440px;
+      transform: skewY(8deg);
+      transform-origin: 100%;
+      background-color: $inner-back;
+    }
+  }
+  
+  &__details-wrap {
+    position: relative;
+    z-index: 2;
+    min-height: 320px;
+    margin-left: 225px;
     background-repeat: no-repeat;
     background-position: left top;
     background-image: url('../images/hexagons.png');
   }
   
+  &__details .section-heading {
+    padding-top: 65px;
+    padding-left: 438px;
+  }
+  
   &__details-text {
-    
+    width: 634px;
+    padding-top: 22px;
+    padding-left: 389px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    color: $inner-text-color;
   }
   
   &__principles {
