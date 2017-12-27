@@ -187,18 +187,81 @@
   
   &__training {
     min-height: 520px;
+    margin-top: 47px;
+    margin-left: 321px;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: left 13px;
     background-image: url('../images/training.png');
   }
   
   &__training-wrap {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 970px;
+    height: 320px;
+    margin-top: 60px;
   }
   
   &__training-item {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400px;
     color: $nf-green;
+    
+    &:nth-child(1) {
+      margin-left: 36px;
+    }
+    
+    &:nth-child(2) {
+      width: 140px;
+      margin-top: 20px;
+      margin-left: 273px;
+      text-align: center;
+    }
+    
+    &:nth-child(3) {
+      margin-top: 94px;
+      margin-left: 64px;
+    }
+    
+    &:nth-child(4) {
+      margin-left: 123px;
+    }
+    
+    &:nth-child(5) {
+      margin-top: 84px;
+      margin-left: 121px;
+    }
+    
+    &:nth-child(6) {
+      width: 94px;
+      margin-top: 144px;
+      margin-left: 188px;
+      text-align: center;
+    }
+    
+    &:nth-child(7) {
+      margin-top: 168px;
+      margin-left: 55px;
+    }
+    
+    &:nth-child(8) {
+      margin-top: 74px;
+      margin-left: 18px;
+    }
+    
+    &:nth-child(9) {
+      margin-top: 28px;
+      margin-left: 41px;
+    }
+  }
+  
+  &__training .section-heading {
+    margin-left: 251px;
   }
   
   &__conclusion {
