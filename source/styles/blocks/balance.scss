@@ -1,0 +1,144 @@
+.balance {
+  &__inner {
+    width: 1138px;
+    background-color: #fff;
+    color: #9f9f9f;
+    border-radius: 5px;
+    margin: 68px 0 270px 130px;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background: linear-gradient(to bottom, rgba(66,186,223,1), rgba(76,154,219,1));
+    border-radius: 5px 5px 0 0;
+    padding: 15px 20px 17px;
+  }
+
+  &__main {
+    padding: 47px 10px 0 47px;
+    height: 100%;
+  }
+
+  &__main-upper {
+    font-size: 0;
+    position: relative;
+    margin-bottom: 46px;
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      width: 930px;
+      background-image: linear-gradient(to right,transparent 0,#a4eaef 50%,transparent 100%);
+    }
+  }
+
+  &__nav {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 300;
+    width: 310px;
+    margin-right: 54px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    border: 2px solid #9f9f9f;
+    background: transparent;
+    color: #9f9f9f;
+    border-radius: 30px;
+    padding: 10px 0;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 8px 30px rgba(62,193,221,0.2),
+                0 8px 30px rgba(62,193,221,0.1) inset;
+    &:hover,
+    &--done {
+      width: 314px;
+      padding: 12px 0;
+      background: linear-gradient(to right, rgba(109,208,230,1), rgba(83,150,227,1));
+      color: #fff;
+      border: none;
+    }
+    &--active {
+      @include box-shadow(0, 10px, 15px, rgba(188,234,243,1));
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 66px;
+      height: 10px;
+      position: absolute;
+      top: 20px;
+      left: -62px;
+      background: url('../images/divider.png') no-repeat 100% 0;
+      z-index: 1000;
+    }
+    &--done:before {
+      top: 22px;
+      left: -60px;
+      background: url('../images/divider_active.png') no-repeat 100% 0;
+    }
+    &:hover:before {
+      top: 22px;
+      left: -60px;
+    }
+    &--done:hover:before {
+      top: 22px;
+      left: -60px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &__step {
+    font-weight: 700;
+  }
+
+  &__main-bottom {
+    padding-top: 37px;
+    padding-bottom: 23px;
+    position: relative;
+    &--invisible {
+      display: none;
+    }
+  }
+
+  &__round {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    background: linear-gradient(to right, rgba(54,208,220,1), rgba(91,134,228,1));
+    @include box-shadow(0, 4px, 4px, rgba(159,224,239,1));
+    &--next {
+      width: 100px;
+      height: 100px;
+      padding: 35px 0;
+      top: 57px;
+      right: 37px;
+    }
+    &--previous {
+      width: 33px;
+      height: 33px;
+      padding: 3px 0;
+      top: 93px;
+      left: 3px;
+    }
+  }
+}

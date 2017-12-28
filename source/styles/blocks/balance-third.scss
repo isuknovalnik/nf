@@ -1,0 +1,69 @@
+.balance {
+
+  &__wrap--deposit {
+    padding-top: 35px;
+    padding-bottom: 74px;
+  }
+
+
+  &__deposit-input-wrap {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__deposit,
+  &__deposit-currency {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2d3049;
+    vertical-align: middle;
+  }
+
+  &__deposit {
+    margin-left: 106px;
+    margin-right: 56px;
+  }
+
+  &__deposit-currency {
+    font-size: 36px;
+    margin-right: 50px;
+    margin-top: 9px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__deposit-number {
+    width: 195px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-right: 5px;
+    font-size: 21px;
+    &::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    :-moz-placeholder,
+    :-ms-input-placeholder {
+      color: #2d3049;
+      font-weight: 300;
+      font-size: 21px;
+    }
+  }
+
+  &__deposit-submit {
+    font-size: 21px;
+    font-family: $robotocond;
+    padding: 18px 36px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgba(54,208,220,1), rgba(91,134,228,1));
+    @include box-shadow(0, 4px, 4px, rgba(159,224,239,1));
+  }
+}
