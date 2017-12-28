@@ -1,0 +1,69 @@
+.balance {
+
+  &__previous-step {
+    width: 33px;
+    height: 33px;
+  }
+
+  &__payment-radio {
+    display: none;
+  }
+
+  &__payment-radio + &__payment {
+    display: inline-block;
+    vertical-align: top;
+    width: 180px;
+    height: 68px;
+    position: relative;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    @include box-shadow(0, 3px, 5px, rgba(239,239,239,1));
+    z-index: 5;
+    &:nth-child(4n+1) {
+      margin-right: 0;
+    }
+    &--qiwi {
+      background-image: url('../images/qiwi.png'), linear-gradient(to bottom, #fdfdfe, #f8f8fc);
+      background-size: 55%;
+    }
+    &--yandexmoney {
+      background-image: url('../images/yandexmoney.png'), linear-gradient(to bottom, #fdfdfe, #f8f8fc);
+    }
+    &--payeer {
+      background-image: url('../images/payeer.png'), linear-gradient(to bottom, #fdfdfe, #f8f8fc);
+      background-size: 55%;
+    }
+    &--B {
+      background-image: url('../images/B.png'), linear-gradient(to bottom, #fdfdfe, #f8f8fc);
+    }
+    &--perfectmoney {
+      background-image: url('../images/perfectmoney.png'), linear-gradient(to bottom, #fdfdfe, #f8f8fc);
+      background-size: 95%, 100%;
+    }
+    &--card {
+      background-image: url('../images/card.png'), linear-gradient(to bottom, #fdfdfe, #f8f8fc);
+      background-size: 98%;
+    }
+    &--advcash {
+      background-image: url('../images/advcash_upper.png'), linear-gradient(to bottom, #fdfdfe, #f8f8fc);
+    }
+    &--bitcoin {
+      background-image: url('../images/bitcoin_icon.png'), linear-gradient(to bottom, #fdfdfe, #f8f8fc);
+    }
+  }
+
+  &__payment-radio:checked + &__payment {
+    @include box-shadow(0, 4px, 8px, rgba(194,236,244,1));
+  }
+
+  &__payment-input-wrap {
+    display: inline-block;
+    width: 760px;
+    margin-left: 150px;
+    margin-right: 32px;
+    font-size: 0;
+  }
+}
