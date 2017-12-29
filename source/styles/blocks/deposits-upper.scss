@@ -1,0 +1,190 @@
+.deposits-upper {
+  border-radius: 5px;
+  width: 780px;
+  margin-bottom: 29px;
+  margin-left: 4px;
+
+  .deposits__inner-wrap {
+    padding-top: 40px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2d3049;
+    display: inline-block;
+    &--currency {
+      margin-right: 98px;
+      margin-top: 8px;
+    }
+    &--sum {
+      margin-right: 76px;
+    }
+    &--plan {
+      margin-right: 133px;
+    }
+  }
+
+  &__row {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfdfdf;
+    &:nth-child(2) {
+      margin-bottom: 48px;
+      padding-bottom: 40px;
+    }
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__currency-radio,
+  &__plan-radio {
+    display: none;
+  }
+
+  &__currency-radio + &__currency {
+    display: inline-block;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-size: 98%;
+    &--rub {
+      background-image: url(../images/currency_rub.png);
+    }
+    &--usd {
+      background-image: url(../images/currency_usd.png);
+    }
+  }
+
+  &__currency-radio:checked + &__currency {
+    background-size: 135%;
+    &--rub {
+      background-position: 49% 20%;
+      background-image: url(../images/currency_rub_active.png);
+    }
+    &--usd {
+      background-position: 49% 20%;
+      background-image: url(../images/currency_usd_active.png);
+    }
+  }
+
+  &__currency-choice {
+    font-size: 24px;
+    margin: 0 20px;
+    margin-top: 5px;
+    color: #9f9f9f;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__deposit-number {
+    width: 195px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 5px;
+    margin-top: 26px;
+    margin-right: 4px;
+    font-size: 21px;
+    color: #2d3049;
+    &::-webkit-input-placeholder,
+    ::-moz-placeholder,
+    :-moz-placeholder,
+    :-ms-input-placeholder {
+      color: #2d3049;
+      font-weight: 300;
+      font-size: 21px;
+    }
+  }
+
+  &__deposit-currency {
+    font-size: 36px;
+    margin-right: 50px;
+    margin-top: 16px;
+    display: inline-block;
+    vertical-align: top;
+    color: #2d3049;
+    font-weight: 700;
+  }
+
+  &__plan-radio + &__plan {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 24px;
+    color: #2d3049;
+    font-weight: 700;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  &__plan-radio + &__plan {
+    &--start {
+      margin-right: 36px;
+    }
+  }
+
+  &__plan-radio:checked + &__plan {
+    color: transparent;
+    height: 39px;
+    &--start {
+      width: 48px;
+    }
+    &--classic {
+      width: 69px;
+    }
+    &--premium {
+      width: 85px;
+    }
+    &--leader {
+      width: 65px;
+    }
+  }
+
+  &__plan-radio:checked + &__plan {
+    color: transparent;
+    &--start {
+      background: url(../images/deposit_start_checked.png) no-repeat 50% 4px;
+    }
+    &--classic {
+      background: url(../images/deposit_classic_checked.png) no-repeat 50% 4px;
+    }
+    &--premium {
+      background: url(../images/deposit_premium_checked.png) no-repeat 50% 4px;
+    }
+    &--leader {
+      background: url(../images/deposit_leader_checked.png) no-repeat 50% 4px;
+    }
+  }
+
+  &__buttons-wrap {
+    padding: 25px 0 30px 180px;
+  }
+
+  &__button {
+    font-family: $robotocond;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 5px 0;
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(54,208,220,1), rgba(91,134,229,1));
+    @include box-shadow(0, 5px, 5px, rgba(158,224,238,1));
+    cursor: pointer;
+    &--reset {
+      padding-left: 53px;
+      padding-right: 53px;
+      margin-right: 24px;
+    }
+    &--submit {
+      padding-left: 122px;
+      padding-right: 122px;
+    }
+  }
+}

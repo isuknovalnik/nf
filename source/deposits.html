@@ -19,8 +19,8 @@
           <h1 class="page-logo__text">NEURAL FINANCE</h1>
         </div>
         <ul class="site-nav site-nav_int">
-          <li class="site-nav__item site-nav__item_active"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#balance"></use></svg>Баланс</a></li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_deposits"><use xlink:href="#deposits"></use></svg>Депозиты</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#balance"></use></svg>Баланс</a></li>
+          <li class="site-nav__item site-nav__item_active"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_deposits"><use xlink:href="#deposits"></use></svg>Депозиты</a></li>
           <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_withdraw"><use xlink:href="#withdraw"></use></svg>Выводы</a></li>
           <li class="site-nav__item site-nav__item_operations"><a href="#" class="site-nav__link"><svg width="14" height="19" class="site-nav__symbol site-nav__symbol_operations"><use xlink:href="#operations"></use></svg>Операции</a></li>
           <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="24" height="15" class="site-nav__symbol site-nav__symbol_payment-req"><use xlink:href="#payment-req"></use></svg>Платежные реквизиты</a></li>
@@ -42,72 +42,52 @@
             <li class="account-nav__item"><a href="#" class="account-nav__link">Выход</a></li>
           </ul>
         </header>
-        <div class="balance">
-          <form class="balance__inner" action="#" method="get" autocomplete="off">
-            <div class="balance__title">
-              Пополнение баланса
-            </div>
-            <div class="balance__main">
-              <div class="balance__main-upper">
-                <a href="#currency" class="balance__nav balance__nav--active balance__nav--done">
-                  <span class="balance__step">Шаг 1.</span>
-                  Выбор Валюты
-                </a>
-                <a href="#payment" class="balance__nav">
-                  <span class="balance__step">Шаг 2.</span>
-                  Платежная система
-                </a>
-                <a href="#deposit" class="balance__nav">
-                  <span class="balance__step">Шаг 3.</span>
-                  Размер суммы
-                </a>
+        <div class="deposits">
+          <form class="deposits__inner" action="#" method="get" autocomplete="off">
+            <section class="deposits-upper">
+              <div class="deposits__title">
+                Новый депозит
               </div>
-              <div id="currency" class="balance__main-bottom">
-                <div class="balance__wrap balance__wrap--currency">
-                  <input id="rub" type="radio" class="balance__currency-radio" name="currency" value="rub"/>
-                  <label for="rub" class="balance__currency balance__currency--rub"></label>
-                  <span class="balance__currency-choice">или</span>
-                  <input id="usd" type="radio" class="balance__currency-radio" name="currency" value="usd" checked/>
-                  <label for="usd" class="balance__currency balance__currency--usd"></label>
-                  <a href="#payment" class="balance__round balance__round--next">Далее ></a>
-                </div>
-              </div>
-              <div id="payment" class="balance__main-bottom balance__main-bottom--invisible">
-                <div class="balance__wrap balance__wrap--payment">
-                  <a href="#currency" class="balance__round balance__round--previous"><</a>
-                  <div class="balance__payment-input-wrap">
-                    <input id="qiwi" type="radio" class="balance__payment-radio" name="payment" value="qiwi" checked/>
-                    <label for="qiwi" class="balance__payment balance__payment--qiwi"></label>
-                    <input id="yandexmmoney" type="radio" class="balance__payment-radio" name="payment" value="yandexmmoney"/>
-                    <label for="yandexmmoney" class="balance__payment balance__payment--yandexmoney"></label>
-                    <input id="payeer" type="radio" class="balance__payment-radio" name="payment" value="payeer"/>
-                    <label for="payeer" class="balance__payment balance__payment--payeer"></label>
-                    <input id="B" type="radio" class="balance__payment-radio" name="payment" value="B"/>
-                    <label for="B" class="balance__payment balance__payment--B"></label>
-                    <input id="perfectmoney" type="radio" class="balance__payment-radio" name="payment" value="perfectmoney"/>
-                    <label for="perfectmoney" class="balance__payment balance__payment--perfectmoney"></label>
-                    <input id="card" type="radio" class="balance__payment-radio" name="payment" value="card"/>
-                    <label for="card" class="balance__payment balance__payment--card"></label>
-                    <input id="advcash" type="radio" class="balance__payment-radio" name="payment" value="advcash"/>
-                    <label for="advcash" class="balance__payment balance__payment--advcash"></label>
-                    <input id="bitcoin" type="radio" class="balance__payment-radio" name="payment" value="bitcoin"/>
-                    <label for="bitcoin" class="balance__payment balance__payment--bitcoin"></label>
+              <div class="deposits__inner-wrap">
+                <div class="deposits-upper__row-wrap">
+                  <div class="deposits-upper__row">
+                    <span class="deposits-upper__title deposits-upper__title--currency">Валюта</span>
+                    <input id="rub" type="radio" class="deposits-upper__currency-radio" name="currency" value="rub"/>
+                    <label for="rub" class="deposits-upper__currency deposits-upper__currency--rub"></label>
+                    <span class="deposits-upper__currency-choice">или</span>
+                    <input id="usd" type="radio" class="deposits-upper__currency-radio" name="currency" value="usd" checked/>
+                    <label for="usd" class="deposits-upper__currency deposits-upper__currency--usd"></label>
                   </div>
-                  <a href="#deposit" class="balance__round balance__round--next">Далее ></a>
-                </div>
-              </div>
-              <div id="deposit" class="balance__main-bottom balance__main-bottom--invisible">
-                <div class="balance__wrap balance__wrap--deposit">
-                  <a href="#payment" class="balance__round balance__round--previous"><</a>
-                  <div class="balance__deposit-input-wrap">
-                    <label for="deposit" class="balance__deposit">Размер суммы</label>
-                    <input id="deposit" type="text" class="balance__deposit-number" name="deposit" placeholder="ваша сумма"/>
-                    <span class="balance__deposit-currency">$</span>
-                    <button type="submit" class="balance__deposit-submit">Пополнить баланс</button>
+                  <div class="deposits-upper__row">
+                    <span class="deposits-upper__title deposits-upper__title--sum">Сумма</span>
+                    <input id="deposit" type="text" class="deposits-upper__deposit-number" name="deposit" placeholder="ваша сумма"/>
+                    <span class="deposits-upper__deposit-currency">$</span>
+                  </div>
+                  <div class="deposits-upper__row">
+                    <span class="deposits-upper__title deposits-upper__title--plan">План</span>
+                    <input id="start" type="radio" class="deposits-upper__plan-radio" name="plan" value="start" checked/>
+                    <label for="start" class="deposits-upper__plan deposits-upper__plan--start">Start</label>
+                    <input id="classic" type="radio" class="deposits-upper__plan-radio" name="plan" value="classic"/>
+                    <label for="classic" class="deposits-upper__plan deposits-upper__plan--classic">Classic</label>
+                    <input id="premium" type="radio" class="deposits-upper__plan-radio" name="plan" value="premium"/>
+                    <label for="premium" class="deposits-upper__plan deposits-upper__plan--premium">Premium</label>
+                    <input id="leader" type="radio" class="deposits-upper__plan-radio" name="plan" value="leader"/>
+                    <label for="leader" class="deposits-upper__plan deposits-upper__plan--leader">Leader</label>
                   </div>
                 </div>
+                <div class="deposits-upper__buttons-wrap">
+                  <button type="reset" class="deposits-upper__button deposits-upper__button--reset">Отмена</button>
+                  <button type="submit" class="deposits-upper__button deposits-upper__button--submit">Создать депозит</button>
+                </div>
               </div>
-            </div>
+            </section>
+            <section class="deposits-bottom">
+              <div class="deposits__title">
+                Депозиты
+              </div>
+              <div class="deposits__inner-wrap">
+              </div>
+            </section>
           </form>
         </div>
         <footer class="footer footer_int">
