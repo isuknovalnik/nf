@@ -1,6 +1,220 @@
 .settings {
   display: flex;
   flex-wrap: wrap;
-  // -width: 100%;
-  // - height: 769px;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 975px;
+  height: 640px;
+  padding-top: 70px;
+  margin-left: 130px;
+  
+  &__form {
+    position: relative;
+    width: 458px;
+    height: 370px;
+    
+    &_wide {
+      width: 100%;
+      height: 240px;
+    }
+  }
+  
+  &__content-wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(100% - 50px);
+    margin-top: 50px;
+    border-radius: 5px;
+    color: $inner-text-color;
+    background-color: $inner-back;
+  }
+  
+  &__form-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 924px;
+    height: 80px;
+    margin: 0;
+    margin-left: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid $account-border;
+  }
+  
+  &__col {
+    width: 438px;
+
+    &:last-child {
+      width: 458px;
+    }
+  }
+  
+  &__input-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__label {
+    font-size: 14px;
+    font-weight: 400;
+    
+    &_checkbox {
+      
+    }
+  }
+  
+  &__input {
+    width: 261px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid $account-border;
+    border-radius: 15px;
+    
+    &:focus {
+      outline: none;
+      color: $nf-int;
+      border-color: $nf-int;
+    }
+    
+    &:disabled {
+      color: $inner-text-color;
+      background-color: transparent;
+      border: 1px solid $account-border;
+    }
+    
+    &_short {
+      width: 163px;
+    }
+  }
+  
+  &__buttons-wrap {
+    display: flex;
+    width: 930px;
+    margin: 20px 30px 0 15px;
+  }
+  
+  &__btn {
+    display: block;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    font-family: $robotocond;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: $text-color;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    background-image: linear-gradient(to right, $nf-int, $gradient-end-int);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 202px 32px;
+    box-shadow: 0 6px 8px -4px $account-shadow;
+    cursor: pointer;
+    
+    &:hover {
+      color: $nf-int;
+      border-color: $nf-int;
+      background: none;
+    }
+    
+    &_personal {
+      width: 165px;
+      background-size: 167px 32px;
+    }
+    
+    &_copy {
+      width: 242px;
+      background-size: 244px 32px;
+    }
+    
+    &_link {
+      text-decoration: none;
+      margin-left: 50px;
+      margin-right: 316px;
+    }
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  &__select {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    // - width: calc(100%);
+    // - height: 47px;
+    margin: 0;
+    padding: 0;
+    font-family: $robotocond;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    // -color: $rating-flt-label;
+    outline: none;
+    border: 1px solid $account-border;
+    border-radius: 12px;
+    background-color: transparent;
+    // - background-repeat: no-repeat;
+    // - background-position: calc(100% - 19px) 19px;
+    // - background-size: 10px 6px;
+    // - background-image: url('../images/arrow-light-down.svg');
+    
+  }
+  
+  &__section {
+    position: relative;
+    width: 488px;
+    height: 220px;
+  }
+  
+  &__section &__content-wrap {
+    display: flex;
+  }
+  
+  &__section-wrap {
+    margin-top: 20px;
+    margin-left: 19px;
+    margin-right: 74px;
+  }
+  
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+  
+  &__auth-value {
+    width: 242px;
+    margin: 22px 0 20px;
+    padding-top: 2px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: capitalize;
+    text-align: center;
+    color: $inner-text-color;
+    border: 1px solid $account-border;
+    border-radius: 15px;
+  }
+  
+  &__auth-qr {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin-top: 30px;
+  }
 }
