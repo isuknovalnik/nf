@@ -66,9 +66,78 @@
     font-weight: 400;
     
     &_checkbox {
-      
+      width: 100%;
+      height: 25px;
+      padding-top: 7px;
+      // - outline: 1px solid red;
     }
   }
+  
+  &__checkbox {
+    display: none;
+    
+    & + label {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      
+      &:hover {
+        color: $nf-int;
+      }
+      
+      &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 28px;
+        height: 28px;
+        border: 1px solid $account-border;
+        border-radius: 50%;
+      }
+      
+      &:hover:before {
+        border-color: $nf-int;
+        box-shadow: 0 6px 8px -4px $account-shadow;
+      }
+    }
+    
+    &:checked +label:before {
+      border-color: transparent;
+      background-image: linear-gradient(to right, $nf-int, $gradient-end-int);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 32px 32px;
+      box-shadow: 0 6px 8px -4px $account-shadow;
+    }
+    
+    &:checked +label:hover:before {
+      background: none;
+      border-color: $nf-int;
+    }
+    
+    &:checked +label:after {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 11px;
+      right: 9px;
+      width: 10px;
+      height: 6px;
+      border-left: 2px solid $text-color;
+      border-bottom: 2px solid $text-color;
+      transform: rotate(-45deg);
+    }
+    
+    &:checked +label:hover:after {
+      border-left: 2px solid $nf-int;
+      border-bottom: 2px solid $nf-int;
+    }
+    
+  }
+  
+
   
   &__input {
     width: 261px;
