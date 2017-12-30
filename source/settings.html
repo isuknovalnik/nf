@@ -77,18 +77,25 @@
             <form action="#" method="get" class="settings__form">
               <h3 class="account-heading">Безопасность</h3>
               <div class="settings__content-wrap">
-                <select name="ip" id="ip" class="settings__select">
-                  <option value="ip-1" class="settings__option" selected>x . x . x . x</option>
-                  <option value="ip-2" class="settings__option">x . x . x . x</option>
-                  <option value="ip-3" class="settings__option">x . x . x . x</option>
-                </select>
-                <input type="checkbox" name="noparallel" value="noparallel" id="noparallel" class="settings__checkbox" />
-                <label for="noparallel" class="settings__label settings__label_checkbox">Запретить параллельные сессии</label>
-                <input type="checkbox" name="ipbind" value="ipbind" id="ipbind" class="settings__checkbox" />
-                <label for="ipbind" class="settings__label settings__label_checkbox">Привязать сессию к IP-адресу</label>
-                <label for="autologout" class="settings__label">Автовыход через N минут</label>
-                <input type="text" name="autologout" value="0" id="autologout" class="settings__input">
-                <input name="security-btn" type="submit" value="Сохранить" class="settings__btn">
+                <div class="settings__col settings__col_short">
+                  <div class="settings__input-wrap settings__input-wrap_select">
+                    <label for="ip" class="settings__label">Контроль смены  IP-адреса</label>
+                    <select name="ip" id="ip" class="settings__select">
+                      <option value="ip-1" class="settings__option" selected>255.255.255.255</option>
+                      <option value="ip-2" class="settings__option">x . x . x . x</option>
+                      <option value="ip-3" class="settings__option">x . x . x . x</option>
+                    </select>
+                  </div>
+                  <input type="checkbox" name="noparallel" value="noparallel" id="noparallel" class="settings__checkbox" />
+                  <label for="noparallel" class="settings__label settings__label_checkbox">Запретить параллельные сессии</label>
+                  <input type="checkbox" name="ipbind" value="ipbind" id="ipbind" class="settings__checkbox" />
+                  <label for="ipbind" class="settings__label settings__label_checkbox">Привязать сессию к IP-адресу</label>
+                  <div class="settings__input-wrap">
+                    <label for="autologout" class="settings__label">Автовыход через N минут</label>
+                    <input type="text" name="autologout" value="0" id="autologout" class="settings__input settings__input_security">
+                  </div>
+                </div>
+                <input name="security-btn" type="submit" value="Сохранить" class="settings__btn settings__btn_security">
               </div>
             </form>
             <section class="settings__section">
