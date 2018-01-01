@@ -47,12 +47,12 @@
             <h3 class="account-heading">Операции</h3>
             <div class="operations__content-wrap">
               <form action="#" method="get" class="operations__form">
-                <div class="operations__input-wrap operations__input-wrap_date">
+                <div class="operations__input-wrap operations__input-wrap_date operations__input-wrap_short">
                   <div class="operations__add-label">Дата</div>
                   <label for="start-date" class="operations__label">с</label>
-                  <input type="text" name="start-date" value="12.12.12" id="start-date" class="operations__input">
+                  <input type="text" name="start-date" value="12.12.12" id="start-date" class="operations__input operations__input_date">
                   <label for="end-date" class="operations__label">по</label>
-                  <input type="text" name="end-date" value="12.12.12" id="end-date" class="operations__input">
+                  <input type="text" name="end-date" value="12.12.12" id="end-date" class="operations__input operations__input_date">
                 </div>
                 <div class="operations__input-wrap operations__input-wrap_select">
                   <label for="payment-system" class="operations__label">Плат. система</label>
@@ -64,11 +64,11 @@
                   <label for="batch-number" class="operations__label">Batch-номер</label>
                   <input type="text" name="batch-number" value="" id="batch-number" class="operations__input">
                 </div>
-                <div class="operations__input-wrap">
+                <div class="operations__input-wrap operations__input-wrap_short">
                   <label for="note" class="operations__label">Примечание</label>
                   <input type="text" name="note" value="" id="note" class="operations__input">
                 </div>
-                <div class="operations__input-wrap operations__input-wrap_select">
+                <div class="operations__input-wrap operations__input-wrap_select operations__input-wrap_short">
                   <label for="operation" class="operations__label">Операция</label>
                   <select name="operation" id="operation" class="operations__select">
                     <option value="operation-1" class="operations__option" selected>Пополнение</option>
@@ -83,9 +83,9 @@
                 </div>
                 <div class="operations__input-wrap operations__input-wrap_select">
                   <label for="payment-state" class="operations__label">Статус</label>
-                  <select name="payment-state" id="payment-state" class="operations__select">
-                    <option value="payment-state-1" class="operations__option" selected>Подготовленный</option>
-                    <option value="payment-state-2" class="operations__option">Ожидает подтверждения</option>
+                  <select name="payment-state" id="payment-state" class="operations__select operations__select_long">
+                    <option value="payment-state-1" class="operations__option">Подготовленный</option>
+                    <option value="payment-state-2" class="operations__option" selected>Ожидает подтверждения</option>
                   </select>
                 </div>
                 <input name="filter-btn" type="submit" value="Отфильтровать" class="operations__btn">
@@ -123,7 +123,6 @@
         </footer>
       </div>
     </div>
-    <script src="scripts/settings.min.js"></script>
   </body>
 
 </html>
