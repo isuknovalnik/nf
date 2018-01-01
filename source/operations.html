@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nf</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="styles/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="symbols">
+      <!-- inject:svg --><!-- endinject -->
+    </div>
+    <div class="main-wrapper">
+      <div class="main-nav main-nav_int">
+        <div class="page-logo page-logo_int">
+          <h1 class="page-logo__text">NEURAL FINANCE</h1>
+        </div>
+        <ul class="site-nav site-nav_int">
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#balance"></use></svg>Баланс</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_deposits"><use xlink:href="#deposits"></use></svg>Депозиты</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_withdraw"><use xlink:href="#withdraw"></use></svg>Выводы</a></li>
+          <li class="site-nav__item site-nav__item_operations site-nav__item_active"><a href="#" class="site-nav__link"><svg width="14" height="19" class="site-nav__symbol site-nav__symbol_operations"><use xlink:href="#operations"></use></svg>Операции</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="24" height="15" class="site-nav__symbol site-nav__symbol_payment-req"><use xlink:href="#payment-req"></use></svg>Платежные реквизиты</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="22" class="site-nav__symbol site-nav__symbol_refer"><use xlink:href="#refer"></use></svg>Реферальная система</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#promo"></use></svg>Промо материалы</a></li>
+        </ul>
+      </div>
+      <div class="account-wrapper">
+        <header class="account-header">
+          <div class="account-user">
+            <div class="account-user__name">Arthur</div>
+            <div class="account-user__balance">12000.35<span class="account-user__unit"> USD</span></div>
+            <div class="account-user__balance">500200<span class="account-user__unit"> Руб.</span></div>
+          </div>
+          <ul class="account-nav">
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Отзывы</a></li>
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Поддержка</a></li>
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Настройки</a></li>
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Выход</a></li>
+          </ul>
+        </header>
+        <div class="account">
+          <div class="operations">
+            <h3 class="account-heading">Операции</h3>
+            <div class="operations__content-wrap">
+              <form action="#" method="get" class="operations__form">
+                <div class="operations__input-wrap operations__input-wrap_date">
+                  <div class="operations__add-label">Дата</div>
+                  <label for="start-date" class="operations__label">с</label>
+                  <input type="text" name="start-date" value="12.12.12" id="start-date" class="operations__input">
+                  <label for="end-date" class="operations__label">по</label>
+                  <input type="text" name="end-date" value="12.12.12" id="end-date" class="operations__input">
+                </div>
+                <div class="operations__input-wrap operations__input-wrap_select">
+                  <label for="payment-system" class="operations__label">Плат. система</label>
+                  <select name="payment-system" id="payment-system" class="operations__select">
+                    <option value="payment-system-1" class="operations__option" selected>BaseL3</option>
+                  </select>
+                </div>
+                <div class="operations__input-wrap">
+                  <label for="batch-number" class="operations__label">Batch-номер</label>
+                  <input type="text" name="batch-number" value="" id="batch-number" class="operations__input">
+                </div>
+                <div class="operations__input-wrap">
+                  <label for="note" class="operations__label">Примечание</label>
+                  <input type="text" name="note" value="" id="note" class="operations__input">
+                </div>
+                <div class="operations__input-wrap operations__input-wrap_select">
+                  <label for="operation" class="operations__label">Операция</label>
+                  <select name="operation" id="operation" class="operations__select">
+                    <option value="operation-1" class="operations__option" selected>Пополнение</option>
+                  </select>
+                </div>
+                <div class="operations__input-wrap operations__input-wrap_select">
+                  <label for="currency" class="operations__label">Валюта счета</label>
+                  <select name="currency" id="currency" class="operations__select">
+                    <option value="usd" class="operations__option" selected>USD</option>
+                    <option value="rub" class="operations__option" selected>RUB</option>
+                  </select>
+                </div>
+                <div class="operations__input-wrap operations__input-wrap_select">
+                  <label for="payment-state" class="operations__label">Статус</label>
+                  <select name="payment-state" id="payment-state" class="operations__select">
+                    <option value="payment-state-1" class="operations__option" selected>Подготовленный</option>
+                    <option value="payment-state-2" class="operations__option">Ожидает подтверждения</option>
+                  </select>
+                </div>
+                <input name="filter-btn" type="submit" value="Отфильтровать" class="operations__btn">
+              </form>
+              <div class="operations-table"></div>
+              <div class="pagination"></div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer footer_int">
+          <svg width="89" height="100" class="footer__logo"><use xlink:href="#logo"></use></svg>
+          <ul class="footer-links">
+            <li class="footer-links__item"><a href="#" class="footer-links__link">О компании</a></li>
+            <li class="footer-links__item"><a href="#" class="footer-links__link">Инвестиции</a></li>
+            <li class="footer-links__item"><a href="#" class="footer-links__link">Маркетинг</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li class="footer-links__item"><a href="#" class="footer-links__link">Отзывы</a></li>
+            <li class="footer-links__item"><a href="#" class="footer-links__link">FAQ</a></li>
+            <li class="footer-links__item"><a href="#" class="footer-links__link">Новости</a></li>
+          </ul>
+          <div class="contacts">
+            <div class="contacts__item"><svg width="14" height="14" class="contacts__symbol"><use xlink:href="#place"></use></svg>14 Redbourn House Norbiton Road, London, England, E14 7TG</div>
+            <div class="contacts__item"><svg width="14" height="14" class="contacts__symbol"><use xlink:href="#phone"></use></svg>+7 812 600 15 00</div>
+            <a href="mailto:example@gmail.com" target="blank" class="contacts__item contacts__item_email"><svg width="14" height="14" class="contacts__symbol"><use xlink:href="#mail"></use></svg>example@gmail.com</a>
+          </div>
+          <div class="social-links">
+            <a class="social-links__link" href="#"><svg width="26" height="16" class="social-links__symbol"><use xlink:href="#vk"></use></svg>vkontakte</a>
+            <a class="social-links__link" href="#"><svg width="22" height="18" class="social-links__symbol"><use xlink:href="#twitter"></use></svg>twitter</a>
+            <a class="social-links__link" href="#"><svg width="30" height="30" class="social-links__symbol"><use xlink:href="#google-plus"></use></svg>google plus</a>
+            <a class="social-links__link" href="#"><svg width="22" height="19" class="social-links__symbol"><use xlink:href="#telegram"></use></svg>telegram</a>
+            <a class="social-links__link" href="#"><svg width="20" height="20" class="social-links__symbol"><use xlink:href="#instagram"></use></svg>instagram</a>
+            <a class="social-links__link" href="#"><svg width="20" height="20" class="social-links__symbol"><use xlink:href="#skype"></use></svg>skype</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="scripts/settings.min.js"></script>
+  </body>
+
+</html>
