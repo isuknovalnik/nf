@@ -3,9 +3,6 @@
   var email = document.querySelector("#email");
   var personalSubmit = document.querySelector(".settings__btn_personal");
   
-  // - var selectWrap = document.querySelector(".settings__input-wrap_select");
-  // - var ipSelector = document.querySelector("#ip");
-  
   var copyButton = document.querySelector(".settings__btn_copy");
   var authValue = document.querySelector(".settings__auth-value");
   
