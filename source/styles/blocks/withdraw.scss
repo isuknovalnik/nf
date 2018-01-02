@@ -1,0 +1,16 @@
+.withdraw {
+  background: url('../images/background-account-green.jpg') no-repeat left top;
+  background-size: cover;
+  padding: 50px 0;
+  padding-bottom: 48px;
+
+  &__main {
+    width: 1140px;
+    margin-left: 130px;
+  }
+
+  .account-title {
+    padding-top: 14px;
+    padding-bottom: 17px;
+  }
+}

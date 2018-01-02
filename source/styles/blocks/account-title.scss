@@ -1,0 +1,38 @@
+.account-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  background: linear-gradient(to bottom, rgba(66,186,223,1), rgba(76,154,219,1));
+  border-radius: 5px 5px 0 0;
+  padding: 15px 20px 17px;
+  position: relative;
+
+  &__small {
+    font-weight: 300;
+    font-size: 18px;
+  }
+
+  &__balance-link,
+  &__button {
+    text-decoration: none;
+    border: none;
+  }
+
+  &__balance-link {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+  }
+
+  &__button {
+    color: #071525;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px 90px;
+    background-color: #fff;
+    border-radius: 30px;
+    position: absolute;
+    right: 19px;
+    top: 8px;
+  }
+}
