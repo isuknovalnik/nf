@@ -1,0 +1,74 @@
+.ref {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1140px;
+  height: 700px;
+  padding-top: 50px;
+  margin-left: 130px;
+  
+  &__section {
+    position: relative;
+    width: 100%;
+    
+    &_system {
+      height: 160px;
+    }
+    
+    &_level {
+      height: 180px;
+    }
+    
+    &_users {
+      height: 320px;
+    }
+  }
+  
+  &__content-wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(100% - 50px);
+    margin-top: 50px;
+    border-radius: 5px;
+    color: $ref-color;
+    background-color: $inner-back;
+  }
+  
+  &__section_level &__content-wrap {
+    height: calc(100% - 40px);
+    margin-top: 40px;
+  }
+  
+  &__section_level .account-heading {
+    height: 33px;
+  }
+  
+  &__btn {
+    display: block;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    font-family: $robotocond;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: $text-color;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    background-image: linear-gradient(to right, $nf-int, $gradient-end-int);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 202px 32px;
+    box-shadow: 0 6px 8px -4px $account-shadow;
+    cursor: pointer;
+    
+    &:hover {
+      color: $nf-int;
+      border-color: $nf-int;
+      background: none;
+    }
+  }
+}
