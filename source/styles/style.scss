@@ -59,7 +59,10 @@
 @import 'blocks/deposits-upper.scss';
 @import 'blocks/deposits-bottom.scss';
 @import 'blocks/deposits-table.scss';
+@import 'blocks/account-title.scss';
 
 @import 'blocks/settings.scss';
 @import 'blocks/account-heading.scss';
-@import 'blocks/operations.scss';
+
+@import 'blocks/withdraw.scss';
+@import 'blocks/account-pagination.scss';
