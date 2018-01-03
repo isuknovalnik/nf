@@ -19,7 +19,7 @@
           <h1 class="page-logo__text">NEURAL FINANCE</h1>
         </div>
         <ul class="site-nav site-nav_int">
-          <li class="site-nav__item site-nav__item_active"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#balance"></use></svg>Баланс</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#balance"></use></svg>Баланс</a></li>
           <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_deposits"><use xlink:href="#deposits"></use></svg>Депозиты</a></li>
           <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_withdraw"><use xlink:href="#withdraw"></use></svg>Выводы</a></li>
           <li class="site-nav__item site-nav__item_operations"><a href="#" class="site-nav__link"><svg width="14" height="19" class="site-nav__symbol site-nav__symbol_operations"><use xlink:href="#operations"></use></svg>Операции</a></li>
@@ -36,79 +36,89 @@
             <div class="account-user__balance">500200<span class="account-user__unit"> Руб.</span></div>
           </div>
           <ul class="account-nav">
-            <li class="account-nav__item"><a href="#" class="account-nav__link">Отзывы</a></li>
+            <li class="account-nav__item account-nav__item_active"><a href="#" class="account-nav__link">Отзывы</a></li>
             <li class="account-nav__item"><a href="#" class="account-nav__link">Поддержка</a></li>
             <li class="account-nav__item"><a href="#" class="account-nav__link">Настройки</a></li>
             <li class="account-nav__item"><a href="#" class="account-nav__link">Выход</a></li>
           </ul>
         </header>
-        <div class="balance">
-          <form class="balance-form" action="#" method="get" autocomplete="off">
-            <div class="account-title">
-              Пополнение баланса
-            </div>
-            <div class="balance-form__main">
-              <div class="balance-form__main-upper">
-                <a href="#currency" class="balance-form__nav balance-form__nav--active balance-form__nav--done">
-                  <span class="balance-form__step">Шаг 1.</span>
-                  Выбор Валюты
-                </a>
-                <a href="#payment" class="balance-form__nav">
-                  <span class="balance-form__step">Шаг 2.</span>
-                  Платежная система
-                </a>
-                <a href="#deposit" class="balance-form__nav">
-                  <span class="balance-form__step">Шаг 3.</span>
-                  Размер суммы
-                </a>
+        <div class="account-feedback">
+          <div class="account-feedback__upper">
+            <div class="account-feedback__inner">
+              <div class="account-title">
+                Отзывы
               </div>
-              <div id="currency" class="balance-form__main-bottom">
-                <div class="balance-form__wrap balance-form__wrap--currency">
-                  <input id="rub" type="radio" class="balance-form__currency-radio" name="currency" value="rub"/>
-                  <label for="rub" class="balance-form__currency balance-form__currency--rub"></label>
-                  <span class="balance-form__currency-choice">или</span>
-                  <input id="usd" type="radio" class="balance-form__currency-radio" name="currency" value="usd" checked/>
-                  <label for="usd" class="balance-form__currency balance-form__currency--usd"></label>
-                  <a href="#payment" class="balance-form__round balance-form__round--next">Далее ></a>
-                </div>
-              </div>
-              <div id="payment" class="balance-form__main-bottom balance-form__main-bottom--invisible">
-                <div class="balance-form__wrap balance-form__wrap--payment">
-                  <a href="#currency" class="balance-form__round balance-form__round--previous"><</a>
-                  <div class="balance-form__payment-input-wrap">
-                    <input id="qiwi" type="radio" class="balance-form__payment-radio" name="payment" value="qiwi" checked/>
-                    <label for="qiwi" class="balance-form__payment balance-form__payment--qiwi"></label>
-                    <input id="yandexmmoney" type="radio" class="balance-form__payment-radio" name="payment" value="yandexmmoney"/>
-                    <label for="yandexmmoney" class="balance-form__payment balance-form__payment--yandexmoney"></label>
-                    <input id="payeer" type="radio" class="balance-form__payment-radio" name="payment" value="payeer"/>
-                    <label for="payeer" class="balance-form__payment balance-form__payment--payeer"></label>
-                    <input id="B" type="radio" class="balance-form__payment-radio" name="payment" value="B"/>
-                    <label for="B" class="balance-form__payment balance-form__payment--B"></label>
-                    <input id="perfectmoney" type="radio" class="balance-form__payment-radio" name="payment" value="perfectmoney"/>
-                    <label for="perfectmoney" class="balance-form__payment balance-form__payment--perfectmoney"></label>
-                    <input id="card" type="radio" class="balance-form__payment-radio" name="payment" value="card"/>
-                    <label for="card" class="balance-form__payment balance-form__payment--card"></label>
-                    <input id="advcash" type="radio" class="balance-form__payment-radio" name="payment" value="advcash"/>
-                    <label for="advcash" class="balance-form__payment balance-form__payment--advcash"></label>
-                    <input id="bitcoin" type="radio" class="balance-form__payment-radio" name="payment" value="bitcoin"/>
-                    <label for="bitcoin" class="balance-form__payment balance-form__payment--bitcoin"></label>
+              <div class="account-feedback__container">
+                <div class="account-feedback__wrap">
+                  <div class="account-feedback__header">
+                    <div class="account-feedback__title">Alex Tomson</div>
+                    <div class="account-feedback__date">4.12.2017</div>
                   </div>
-                  <a href="#deposit" class="balance-form__round balance-form__round--next">Далее ></a>
-                </div>
-              </div>
-              <div id="deposit" class="balance-form__main-bottom balance-form__main-bottom--invisible">
-                <div class="balance-form__wrap balance-form__wrap--deposit">
-                  <a href="#payment" class="balance-form__round balance-form__round--previous"><</a>
-                  <div class="balance-form__deposit-input-wrap">
-                    <label for="deposit" class="balance-form__deposit">Размер суммы</label>
-                    <input id="deposit" type="text" class="balance-form__deposit-number" name="deposit" placeholder="ваша сумма"/>
-                    <span class="balance-form__deposit-currency">$</span>
-                    <button type="submit" class="balance-form__deposit-submit">Пополнить баланс</button>
+                  <div class="account-feedback__text">
+                    Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what. An concluded sportsman offending so provision mr education. Bed uncommonly his discovered for estimating far. Equally he minutes my hastily. Up hung mr we give rest half. Painful so he an comfort is manners.
                   </div>
                 </div>
+                <div class="account-feedback__wrap">
+                  <div class="account-feedback__header">
+                    <div class="account-feedback__title">Alex Tomson</div>
+                    <div class="account-feedback__date">4.12.2017</div>
+                  </div>
+                  <div class="account-feedback__text">
+                    Effect if in up no depend seemed.
+                  </div>
+                </div>
+                <div class="account-feedback__wrap">
+                  <div class="account-feedback__header">
+                    <div class="account-feedback__title">Alex Tomson</div>
+                    <div class="account-feedback__date">4.12.2017</div>
+                  </div>
+                  <div class="account-feedback__text">
+                    Effect if in up no depend seemed.
+                  </div>
+                </div>
+                <div class="account-feedback__wrap">
+                  <div class="account-feedback__header">
+                    <div class="account-feedback__title">Alex Tomson</div>
+                    <div class="account-feedback__date">4.12.2017</div>
+                  </div>
+                  <div class="account-feedback__text">
+                    Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what. An concluded sportsman offending so provision mr education. Bed uncommonly his discovered for estimating far. Equally he minutes my hastily. Up hung mr we give rest half. Painful so he an comfort is manners.
+                  </div>
+                </div>
+                <div class="account-feedback__wrap">
+                  <div class="account-feedback__header">
+                    <div class="account-feedback__title">Alex Tomson</div>
+                    <div class="account-feedback__date">4.12.2017</div>
+                  </div>
+                  <div class="account-feedback__text">
+                    Effect if in up no depend seemed. Ecstatic elegance gay but disposed. We me rent been part what. An concluded sportsman offending so provision mr education. Bed uncommonly his discovered for estimating far. Equally he minutes my hastily. Up hung mr we give rest half. Painful so he an comfort is manners.
+                  </div>
+                </div>
+                <div class="account-pagination">
+                  <ul class="account-pagination__list">
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link account-pagination__link--active">1</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">2</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">3</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">7</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </form>
+          </div>
+          <div class="account-feedback__bottom">
+            <form class="account-feedback__inner" action="#" method="get" autocomplete="off">
+              <div class="account-title">
+                Оставьте свой отзыв
+              </div>
+              <div class="account-feedback__container">
+                <textarea class="account-feedback__form-text" rows="1" cols="142" name="account-text">Текст отзыва</textarea>
+                <button type="submit" class="account-feedback__button account-feedback__button--submit">Отправить</button>
+              </div>
+            </form>
+          </div>
         </div>
         <footer class="footer footer_int">
           <svg width="89" height="100" class="footer__logo"><use xlink:href="#logo"></use></svg>
