@@ -1,0 +1,104 @@
+.account-feedback {
+  padding-top: 70px;
+  padding-left: 129px;
+  padding-bottom: 28px;
+  background: url('../images/background-account.jpg') no-repeat left top;
+
+  &__upper {
+    margin-bottom: 36px;
+  }
+
+  &__inner {
+    width: 1138px;
+  }
+
+  &__container {
+    background-color: #fff;
+    font-size: 14px;
+    color: #071525;
+    padding: 12px 20px;
+    border-radius: 5px;
+    position: relative;
+    top: -2px;
+  }
+
+  &__wrap {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #dfdfdf;
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+    flex-grow: 1;
+    margin-bottom: 6px;
+  }
+
+  &__date {
+    color: #a2a3a7;
+    font-weight: 300;
+    margin-top: 5px;
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+  &__form-text,
+  &__button {
+    border-radius: 30px;
+  }
+
+  &__form-text {
+    border: 1px solid #dfdfdf;
+    outline: none;
+    background: transparent;
+    padding: 6px 10px;
+    padding-right: 20px;
+    font-size: 14px;
+    color: #2d3049;
+    font-family: $robotocond;
+    margin-top: 9px;
+    margin-bottom: 3px;
+  }
+
+  &__button {
+    font-family: $robotocond;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(54,208,220,1), rgba(91,134,228,1));
+    @include box-shadow(0, 4px, 4px, rgba(159,224,239,1));
+    padding: 5px 58px;
+    position: absolute;
+    top: 21px;
+    right: 20px;
+  }
+
+  .account-pagination {
+    margin-top: 16px;
+    margin-left: 2px;
+    margin-bottom: 12px;
+    &__link {
+      &--active {
+        color: #75dc9f;
+        border-bottom: 2px solid #75dc9f;
+        font-weight: 700;
+      }
+    }
+  }
+}
