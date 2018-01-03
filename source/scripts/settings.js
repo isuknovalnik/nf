@@ -20,12 +20,5 @@
     }
   });
   
-  copyButton.addEventListener('click', function(event) {
-    var range = document.createRange();
-    range.selectNode(authValue);
-    window.getSelection().addRange(range);
-    document.execCommand('copy');
-    window.getSelection().removeAllRanges();
-  });
-  
+  window.copyToClipboard(authValue, copyButton);
 })();
