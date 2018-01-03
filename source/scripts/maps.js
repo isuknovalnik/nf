@@ -164,16 +164,33 @@ function initMap() {
     {name: 'Styled Map'});
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
-    center: {lat: 51.514494, lng: -0.031297},
+    center: {lat: 51.51680, lng: -0.027995},
     mapTypeId: google.maps.MapTypeId.ROADMAP
-  });
-  var image = "images/map_marker.png";
-  var marker = new google.maps.Marker({
-    position: uluru,
-    icon: image,
-    map: map
   });
 
   map.mapTypes.set('styled_map', styledMapType);
   map.setMapTypeId('styled_map');
+
+  var service = new google.maps.places.PlacesService(map);
+  service.getDetails({
+    placeId: 'ChIJR9HcxcwCdkgRJxdwjuSTIM0'
+  }, function(place, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      var markerIcon = {
+        url: "images/map_marker.png",
+        labelOrigin: new google.maps.Point(118, 35)
+      };
+      var marker = new google.maps.Marker({
+        label: {
+          color: "#666666",
+          text: "Redbourne House",
+          fontSize: "19px",
+          fontWeight: "500"
+        },
+        icon: markerIcon,
+        map: map,
+        position: place.geometry.location
+      });
+    }
+  });
 }
