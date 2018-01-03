@@ -3,6 +3,7 @@
   var email = document.querySelector("#email");
   var personalSubmit = document.querySelector(".settings__btn_personal");
   
+  var account = document.querySelector(".account");
   var copyButton = document.querySelector(".settings__btn_copy");
   var authValue = document.querySelector(".settings__auth-value");
   
@@ -20,5 +21,5 @@
     }
   });
   
-  window.copyToClipboard(authValue, copyButton);
+  window.copyToClipboard(authValue, copyButton, account, "account");
 })();
