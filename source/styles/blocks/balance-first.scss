@@ -1,4 +1,4 @@
-.balance {
+.balance-form {
   &__wrap--currency {
     margin-left: 308px;
     padding-bottom: 37px;
@@ -37,5 +37,17 @@
   &__currency-choice {
     font-size: 24px;
     margin: 0 52px;
+  }
+
+  &--green {
+    .balance-form__currency-radio:checked + .balance-form__currency {
+      background-position: 1px 11px;
+      &--rub {
+        background-image: url(../images/currency_rub_active_green.png);
+      }
+      &--usd {
+        background-image: url(../images/currency_usd_active_green.png);
+      }
+    }
   }
 }

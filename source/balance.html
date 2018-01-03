@@ -43,67 +43,67 @@
           </ul>
         </header>
         <div class="balance">
-          <form class="balance__inner" action="#" method="get" autocomplete="off">
+          <form class="balance-form" action="#" method="get" autocomplete="off">
             <div class="account-title">
               Пополнение баланса
             </div>
-            <div class="balance__main">
-              <div class="balance__main-upper">
-                <a href="#currency" class="balance__nav balance__nav--active balance__nav--done">
-                  <span class="balance__step">Шаг 1.</span>
+            <div class="balance-form__main">
+              <div class="balance-form__main-upper">
+                <a href="#currency" class="balance-form__nav balance-form__nav--active balance-form__nav--done">
+                  <span class="balance-form__step">Шаг 1.</span>
                   Выбор Валюты
                 </a>
-                <a href="#payment" class="balance__nav">
-                  <span class="balance__step">Шаг 2.</span>
+                <a href="#payment" class="balance-form__nav">
+                  <span class="balance-form__step">Шаг 2.</span>
                   Платежная система
                 </a>
-                <a href="#deposit" class="balance__nav">
-                  <span class="balance__step">Шаг 3.</span>
+                <a href="#deposit" class="balance-form__nav">
+                  <span class="balance-form__step">Шаг 3.</span>
                   Размер суммы
                 </a>
               </div>
-              <div id="currency" class="balance__main-bottom">
-                <div class="balance__wrap balance__wrap--currency">
-                  <input id="rub" type="radio" class="balance__currency-radio" name="currency" value="rub"/>
-                  <label for="rub" class="balance__currency balance__currency--rub"></label>
-                  <span class="balance__currency-choice">или</span>
-                  <input id="usd" type="radio" class="balance__currency-radio" name="currency" value="usd" checked/>
-                  <label for="usd" class="balance__currency balance__currency--usd"></label>
-                  <a href="#payment" class="balance__round balance__round--next">Далее ></a>
+              <div id="currency" class="balance-form__main-bottom">
+                <div class="balance-form__wrap balance-form__wrap--currency">
+                  <input id="rub" type="radio" class="balance-form__currency-radio" name="currency" value="rub"/>
+                  <label for="rub" class="balance-form__currency balance-form__currency--rub"></label>
+                  <span class="balance-form__currency-choice">или</span>
+                  <input id="usd" type="radio" class="balance-form__currency-radio" name="currency" value="usd" checked/>
+                  <label for="usd" class="balance-form__currency balance-form__currency--usd"></label>
+                  <a href="#payment" class="balance-form__round balance-form__round--next">Далее ></a>
                 </div>
               </div>
-              <div id="payment" class="balance__main-bottom balance__main-bottom--invisible">
-                <div class="balance__wrap balance__wrap--payment">
-                  <a href="#currency" class="balance__round balance__round--previous"><</a>
-                  <div class="balance__payment-input-wrap">
-                    <input id="qiwi" type="radio" class="balance__payment-radio" name="payment" value="qiwi" checked/>
-                    <label for="qiwi" class="balance__payment balance__payment--qiwi"></label>
-                    <input id="yandexmmoney" type="radio" class="balance__payment-radio" name="payment" value="yandexmmoney"/>
-                    <label for="yandexmmoney" class="balance__payment balance__payment--yandexmoney"></label>
-                    <input id="payeer" type="radio" class="balance__payment-radio" name="payment" value="payeer"/>
-                    <label for="payeer" class="balance__payment balance__payment--payeer"></label>
-                    <input id="B" type="radio" class="balance__payment-radio" name="payment" value="B"/>
-                    <label for="B" class="balance__payment balance__payment--B"></label>
-                    <input id="perfectmoney" type="radio" class="balance__payment-radio" name="payment" value="perfectmoney"/>
-                    <label for="perfectmoney" class="balance__payment balance__payment--perfectmoney"></label>
-                    <input id="card" type="radio" class="balance__payment-radio" name="payment" value="card"/>
-                    <label for="card" class="balance__payment balance__payment--card"></label>
-                    <input id="advcash" type="radio" class="balance__payment-radio" name="payment" value="advcash"/>
-                    <label for="advcash" class="balance__payment balance__payment--advcash"></label>
-                    <input id="bitcoin" type="radio" class="balance__payment-radio" name="payment" value="bitcoin"/>
-                    <label for="bitcoin" class="balance__payment balance__payment--bitcoin"></label>
+              <div id="payment" class="balance-form__main-bottom balance-form__main-bottom--invisible">
+                <div class="balance-form__wrap balance-form__wrap--payment">
+                  <a href="#currency" class="balance-form__round balance-form__round--previous"><</a>
+                  <div class="balance-form__payment-input-wrap">
+                    <input id="qiwi" type="radio" class="balance-form__payment-radio" name="payment" value="qiwi" checked/>
+                    <label for="qiwi" class="balance-form__payment balance-form__payment--qiwi"></label>
+                    <input id="yandexmmoney" type="radio" class="balance-form__payment-radio" name="payment" value="yandexmmoney"/>
+                    <label for="yandexmmoney" class="balance-form__payment balance-form__payment--yandexmoney"></label>
+                    <input id="payeer" type="radio" class="balance-form__payment-radio" name="payment" value="payeer"/>
+                    <label for="payeer" class="balance-form__payment balance-form__payment--payeer"></label>
+                    <input id="B" type="radio" class="balance-form__payment-radio" name="payment" value="B"/>
+                    <label for="B" class="balance-form__payment balance-form__payment--B"></label>
+                    <input id="perfectmoney" type="radio" class="balance-form__payment-radio" name="payment" value="perfectmoney"/>
+                    <label for="perfectmoney" class="balance-form__payment balance-form__payment--perfectmoney"></label>
+                    <input id="card" type="radio" class="balance-form__payment-radio" name="payment" value="card"/>
+                    <label for="card" class="balance-form__payment balance-form__payment--card"></label>
+                    <input id="advcash" type="radio" class="balance-form__payment-radio" name="payment" value="advcash"/>
+                    <label for="advcash" class="balance-form__payment balance-form__payment--advcash"></label>
+                    <input id="bitcoin" type="radio" class="balance-form__payment-radio" name="payment" value="bitcoin"/>
+                    <label for="bitcoin" class="balance-form__payment balance-form__payment--bitcoin"></label>
                   </div>
-                  <a href="#deposit" class="balance__round balance__round--next">Далее ></a>
+                  <a href="#deposit" class="balance-form__round balance-form__round--next">Далее ></a>
                 </div>
               </div>
-              <div id="deposit" class="balance__main-bottom balance__main-bottom--invisible">
-                <div class="balance__wrap balance__wrap--deposit">
-                  <a href="#payment" class="balance__round balance__round--previous"><</a>
-                  <div class="balance__deposit-input-wrap">
-                    <label for="deposit" class="balance__deposit">Размер суммы</label>
-                    <input id="deposit" type="text" class="balance__deposit-number" name="deposit" placeholder="ваша сумма"/>
-                    <span class="balance__deposit-currency">$</span>
-                    <button type="submit" class="balance__deposit-submit">Пополнить баланс</button>
+              <div id="deposit" class="balance-form__main-bottom balance-form__main-bottom--invisible">
+                <div class="balance-form__wrap balance-form__wrap--deposit">
+                  <a href="#payment" class="balance-form__round balance-form__round--previous"><</a>
+                  <div class="balance-form__deposit-input-wrap">
+                    <label for="deposit" class="balance-form__deposit">Размер суммы</label>
+                    <input id="deposit" type="text" class="balance-form__deposit-number" name="deposit" placeholder="ваша сумма"/>
+                    <span class="balance-form__deposit-currency">$</span>
+                    <button type="submit" class="balance-form__deposit-submit">Пополнить баланс</button>
                   </div>
                 </div>
               </div>
