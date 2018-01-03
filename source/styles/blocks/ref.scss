@@ -94,6 +94,77 @@
     font-weight: 400;
   }
   
+  &__system-wrap {
+    display: flex;
+    align-items: flex-end;
+    width: 1100px;
+    min-height: 30px;
+    margin: 0 auto 20px;
+    padding-top: 24px;
+  }
+  
+  &__system-text {
+    margin-right: 54px;
+    padding-bottom: 1px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  &__test-link {
+    margin-right: 164px;
+    padding-bottom: 1px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $nf-int;
+    border-bottom: 1px solid $nf-int;
+  }
+  
+  &__ref-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 730px;
+    min-height: 30px;
+  }
+  
+  &__link-descr {
+    // -margin-right: 56px;
+    padding-bottom: 1px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  &__ref-link {
+    // -margin-right: 37px;
+    margin-left: 26px;
+    margin-right: 8px;
+    padding-bottom: 1px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $nf-int;
+    border-bottom: 1px solid $nf-int;
+  }
+  
+  &__levels {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+    margin-left: 20px;
+  }
+  
+  &__level {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: $nf-int;
+    border-bottom: 1px solid $nf-int;
+  }
+  
   & .account-pagination {
     margin-top: 28px;
     margin-left: 26px;
