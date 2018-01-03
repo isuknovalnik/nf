@@ -42,6 +42,7 @@
   
   &__section_level .account-heading {
     height: 33px;
+    padding-top: 13px;
   }
   
   &__btn {
@@ -70,6 +71,27 @@
       border-color: $nf-int;
       background: none;
     }
+  }
+  
+  &__level-heading {
+    padding-top: 23px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  &__level-fund {
+    padding-top: 20px;
+    margin-left: 64px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  
+  &__level-bonus {
+    padding-top: 20px;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 400;
   }
   
   & .account-pagination {
