@@ -8,4 +8,52 @@
   &_green {
     background-image: url('../images/background-account-green.jpg');
   }
+  
+  &_success {
+    position: relative;
+    
+    &:after {
+      position: absolute;
+      z-index: 1;
+      display: block;
+      content: 'Скопировано';
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center;
+      color: $nf-green;
+      border: 1px solid $nf-green;
+      border-radius: 15px;
+      box-shadow: 0 0 10px 0 $nf-green;
+    }
+  }
+  
+  &_error {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      z-index: 1;
+      display: block;
+      content: 'Ошибка копирования';
+      top: 20px;
+      left: 20px;
+      width: 240px;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center;
+      color: $error-message;
+      border: 1px solid $error-message;
+      border-radius: 15px;
+      box-shadow: 0 0 10px 0 $error-message;
+    }
+  }
 }
