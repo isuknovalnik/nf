@@ -1,4 +1,4 @@
-.balance {
+.balance-form {
 
   &__wrap--deposit {
     padding-top: 35px;
@@ -20,7 +20,7 @@
   }
 
   &__deposit {
-    margin-left: 106px;
+    margin-left: 145px;
     margin-right: 56px;
   }
 
@@ -64,7 +64,15 @@
     font-size: 24px;
     font-weight: 700;
     border-radius: 30px;
+    cursor: pointed;
     background: linear-gradient(to right, rgba(54,208,220,1), rgba(91,134,228,1));
     @include box-shadow(0, 4px, 4px, rgba(159,224,239,1));
+  }
+
+  &--green {
+    .balance-form__deposit-submit {
+      background: linear-gradient(to right, rgba(168,224,99,1), rgba(101,179,65,1));
+      @include box-shadow(0, 4px, 4px, rgba(202,233,171,1));
+    }
   }
 }

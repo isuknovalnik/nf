@@ -20,8 +20,8 @@
         </div>
         <ul class="site-nav site-nav_int">
           <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#balance"></use></svg>Баланс</a></li>
-          <li class="site-nav__item site-nav__item_active"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_deposits"><use xlink:href="#deposits"></use></svg>Депозиты</a></li>
-          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_withdraw"><use xlink:href="#withdraw"></use></svg>Выводы</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_deposits"><use xlink:href="#deposits"></use></svg>Депозиты</a></li>
+          <li class="site-nav__item site-nav__item_active"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_withdraw"><use xlink:href="#withdraw"></use></svg>Выводы</a></li>
           <li class="site-nav__item site-nav__item_operations"><a href="#" class="site-nav__link"><svg width="14" height="19" class="site-nav__symbol site-nav__symbol_operations"><use xlink:href="#operations"></use></svg>Операции</a></li>
           <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="24" height="15" class="site-nav__symbol site-nav__symbol_payment-req"><use xlink:href="#payment-req"></use></svg>Платежные реквизиты</a></li>
           <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="22" class="site-nav__symbol site-nav__symbol_refer"><use xlink:href="#refer"></use></svg>Реферальная система</a></li>
@@ -36,7 +36,7 @@
             <div class="account-user__balance">500200<span class="account-user__unit"> Руб.</span></div>
           </div>
           <ul class="account-nav">
-            <li class="account-nav__item account-nav__item_active"><a href="#" class="account-nav__link">Отзывы</a></li>
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Отзывы</a></li>
             <li class="account-nav__item"><a href="#" class="account-nav__link">Поддержка</a></li>
             <li class="account-nav__item"><a href="#" class="account-nav__link">Настройки</a></li>
             <li class="account-nav__item"><a href="#" class="account-nav__link">Выход</a></li>
@@ -44,343 +44,411 @@
         </header>
         <div class="withdraw">
           <section class="withdraw__main">
-            <div class="account-title">
-              Выводы
-              <span class="account-title__small">(депозит можно создать с баланса, что бы пополнить баланс перейдите по <a href="balance.html" class="account-title__balance-link">ссылке</a>)</span>
-              <a href="#" class="account-title__button">Вывести</a>
+            <div class="withdraw__table">
+              <div class="account-title">
+                Выводы
+                <span class="account-title__small">(депозит можно создать с баланса, что бы пополнить баланс перейдите по <a href="balance.html" class="account-title__balance-link">ссылке</a>)</span>
+                <a href="#" class="account-title__button">Вывести</a>
+              </div>
+              <div class="deposits-table">
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    ID
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    Создан
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum">
+                    Сумма
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals deposits-table__cell--small">
+                    Последние начисления
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals deposits-table__cell--small">
+                    Количество начисления
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    Прибыль
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals deposits-table__cell--small">
+                    Следующие начисления
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status">
+                    Статус
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    1
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    Авто
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 120.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План 1
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 300.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    3
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План 1
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 120.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    4
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    Авто
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 300.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    5
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 120.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    6
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 300.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    7
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План1
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 120.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    8
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План1
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 300.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    9
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План1
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 120.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="deposits-table__row">
+                  <div class="deposits-table__cell deposits-table__cell--id">
+                    10
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--create">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
+                    $ 1151.2
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--plan">
+                    План1
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--last-accruals">
+
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--number-accruals">
+                    0 of 5 100.00%
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--income">
+                    0.00 USD 120.087000
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--next-accruals">
+                    21 фев. 2017 (19:59)
+                  </div>
+                  <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
+                    Активный
+                  </div>
+                </div>
+                <div class="account-pagination">
+                  <ul class="account-pagination__list">
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link account-pagination__link--active">1</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">2</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">3</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
+                    <li class="account-pagination__item"><a href="#0" class="account-pagination__link">7</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="deposits-table">
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  ID
+            <form class="balance-form balance-form--green balance-form--hidden" action="#" method="get" autocomplete="off">
+              <div class="account-title">
+                Вывод средств
+              </div>
+              <div class="balance-form__main">
+                <div class="balance-form__main-upper">
+                  <a href="#currency" class="balance-form__nav balance-form__nav--active balance-form__nav--done">
+                    <span class="balance-form__step">Шаг 1.</span>
+                    Выбор Валюты
+                  </a>
+                  <a href="#payment" class="balance-form__nav">
+                    <span class="balance-form__step">Шаг 2.</span>
+                    Платежная система
+                  </a>
+                  <a href="#deposit" class="balance-form__nav">
+                    <span class="balance-form__step">Шаг 3.</span>
+                    Размер суммы
+                  </a>
                 </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  Создан
+                <div id="currency" class="balance-form__main-bottom">
+                  <div class="balance-form__wrap balance-form__wrap--currency">
+                    <input id="rub" type="radio" class="balance-form__currency-radio" name="currency" value="rub"/>
+                    <label for="rub" class="balance-form__currency balance-form__currency--rub"></label>
+                    <span class="balance-form__currency-choice">или</span>
+                    <input id="usd" type="radio" class="balance-form__currency-radio" name="currency" value="usd" checked/>
+                    <label for="usd" class="balance-form__currency balance-form__currency--usd"></label>
+                    <a href="#payment" class="balance-form__round balance-form__round--next">Далее ></a>
+                  </div>
                 </div>
-                <div class="deposits-table__cell deposits-table__cell--sum">
-                  Сумма
+                <div id="payment" class="balance-form__main-bottom balance-form__main-bottom--invisible">
+                  <div class="balance-form__wrap balance-form__wrap--payment">
+                    <a href="#currency" class="balance-form__round balance-form__round--previous"><</a>
+                    <div class="balance-form__payment-input-wrap">
+                      <input id="qiwi" type="radio" class="balance-form__payment-radio" name="payment" value="qiwi" checked/>
+                      <label for="qiwi" class="balance-form__payment balance-form__payment--qiwi"></label>
+                      <input id="yandexmmoney" type="radio" class="balance-form__payment-radio" name="payment" value="yandexmmoney"/>
+                      <label for="yandexmmoney" class="balance-form__payment balance-form__payment--yandexmoney"></label>
+                      <input id="payeer" type="radio" class="balance-form__payment-radio" name="payment" value="payeer"/>
+                      <label for="payeer" class="balance-form__payment balance-form__payment--payeer"></label>
+                      <input id="B" type="radio" class="balance-form__payment-radio" name="payment" value="B"/>
+                      <label for="B" class="balance-form__payment balance-form__payment--B"></label>
+                      <input id="perfectmoney" type="radio" class="balance-form__payment-radio" name="payment" value="perfectmoney"/>
+                      <label for="perfectmoney" class="balance-form__payment balance-form__payment--perfectmoney"></label>
+                      <input id="card" type="radio" class="balance-form__payment-radio" name="payment" value="card"/>
+                      <label for="card" class="balance-form__payment balance-form__payment--card"></label>
+                      <input id="advcash" type="radio" class="balance-form__payment-radio" name="payment" value="advcash"/>
+                      <label for="advcash" class="balance-form__payment balance-form__payment--advcash"></label>
+                      <input id="bitcoin" type="radio" class="balance-form__payment-radio" name="payment" value="bitcoin"/>
+                      <label for="bitcoin" class="balance-form__payment balance-form__payment--bitcoin"></label>
+                    </div>
+                    <a href="#deposit" class="balance-form__round balance-form__round--next">Далее ></a>
+                  </div>
                 </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals deposits-table__cell--small">
-                  Последние начисления
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals deposits-table__cell--small">
-                  Количество начисления
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  Прибыль
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals deposits-table__cell--small">
-                  Следующие начисления
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status">
-                  Статус
+                <div id="deposit" class="balance-form__main-bottom balance-form__main-bottom--invisible">
+                  <div class="balance-form__wrap balance-form__wrap--deposit">
+                    <a href="#payment" class="balance-form__round balance-form__round--previous"><</a>
+                    <div class="balance-form__deposit-input-wrap">
+                      <label for="deposit" class="balance-form__deposit">Размер суммы</label>
+                      <input id="deposit" type="text" class="balance-form__deposit-number" name="deposit" placeholder="ваша сумма"/>
+                      <span class="balance-form__deposit-currency">$</span>
+                      <button type="submit" class="balance-form__deposit-submit">Вывести финансы</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  1
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  Авто
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 120.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План 1
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 300.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  3
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План 1
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 120.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  4
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  Авто
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 300.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  5
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 120.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  6
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 300.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  7
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План1
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 120.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  8
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План1
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 300.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  9
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План1
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 120.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="deposits-table__row">
-                <div class="deposits-table__cell deposits-table__cell--id">
-                  10
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--create">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--sum deposits-table__cell--large">
-                  $ 1151.2
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--plan">
-                  План1
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--last-accruals">
-
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--number-accruals">
-                  0 of 5 100.00%
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--income">
-                  0.00 USD 120.087000
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--next-accruals">
-                  21 фев. 2017 (19:59)
-                </div>
-                <div class="deposits-table__cell deposits-table__cell--status deposits-table__cell--large">
-                  Активный
-                </div>
-              </div>
-              <div class="account-pagination">
-                <ul class="account-pagination__list">
-                  <li class="account-pagination__item"><a href="#0" class="account-pagination__link account-pagination__link--active">1</a></li>
-                  <li class="account-pagination__item"><a href="#0" class="account-pagination__link">2</a></li>
-                  <li class="account-pagination__item"><a href="#0" class="account-pagination__link">3</a></li>
-                  <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
-                  <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
-                  <li class="account-pagination__item"><a href="#0" class="account-pagination__link">.</a></li>
-                  <li class="account-pagination__item"><a href="#0" class="account-pagination__link">7</a></li>
-                </ul>
-              </div>
-            </div>
+            </form>
           </section>
         </div>
         <footer class="footer footer_int">

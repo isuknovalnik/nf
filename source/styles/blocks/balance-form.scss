@@ -1,11 +1,9 @@
-.balance {
-  &__inner {
-    width: 1138px;
-    background-color: #fff;
-    color: #9f9f9f;
-    border-radius: 5px;
-    margin: 68px 0 270px 130px;
-  }
+.balance-form {
+  width: 1138px;
+  background-color: #fff;
+  color: #9f9f9f;
+  border-radius: 5px;
+  margin: 68px 0 270px 130px;
 
   &__main {
     padding: 47px 10px 0 47px;
@@ -34,7 +32,7 @@
     font-size: 24px;
     font-weight: 300;
     width: 310px;
-    margin-right: 54px;
+    margin-right: 52px;
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -54,6 +52,9 @@
       background: linear-gradient(to right, rgba(109,208,230,1), rgba(83,150,227,1));
       color: #fff;
       border: none;
+    }
+    &--done {
+      box-shadow: none;
     }
     &--active {
       @include box-shadow(0, 10px, 15px, rgba(188,234,243,1));
@@ -131,5 +132,40 @@
       top: 93px;
       left: 3px;
     }
+  }
+
+  &--green {
+    margin-left: 0;
+    margin-top: 19px;
+    margin-bottom: 220px;
+    .balance-form {
+      &__nav {
+        &:hover,
+        &--done {
+          background: linear-gradient(to right, rgba(103,182,58,1), rgba(150,212,88,1));
+        }
+        &--active {
+          @include box-shadow(0, 10px, 15px, rgba(219,240,197,1));
+        }
+        &--done:before {
+          background: url('../images/divider_active_green.png') no-repeat 100% 0;
+        }
+      }
+
+      &__main-upper {
+        &:after {
+          background-image: linear-gradient(to right,transparent 0,#abd598 50%,transparent 100%);
+        }
+      }
+
+      &__round {
+        background: linear-gradient(to right, rgba(167,223,99,1), rgba(95,176,57,1));
+        @include box-shadow(0, 4px, 4px, rgba(204,234,173,1));
+      }
+    }
+  }
+
+  &--hidden {
+    display: none;
   }
 }
