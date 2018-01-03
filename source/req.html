@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nf</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="styles/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page">
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden" class="symbols">
+      <!-- inject:svg --><!-- endinject -->
+    </div>
+    <div class="main-wrapper">
+      <div class="main-nav main-nav_int">
+        <div class="page-logo page-logo_int">
+          <h1 class="page-logo__text">NEURAL FINANCE</h1>
+        </div>
+        <ul class="site-nav site-nav_int">
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#balance"></use></svg>Баланс</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_deposits"><use xlink:href="#deposits"></use></svg>Депозиты</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol site-nav__symbol_withdraw"><use xlink:href="#withdraw"></use></svg>Выводы</a></li>
+          <li class="site-nav__item site-nav__item_operations"><a href="#" class="site-nav__link"><svg width="14" height="19" class="site-nav__symbol site-nav__symbol_operations"><use xlink:href="#operations"></use></svg>Операции</a></li>
+          <li class="site-nav__item site-nav__item_active"><a href="#" class="site-nav__link"><svg width="24" height="15" class="site-nav__symbol site-nav__symbol_payment-req"><use xlink:href="#payment-req"></use></svg>Платежные реквизиты</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="22" class="site-nav__symbol site-nav__symbol_refer"><use xlink:href="#refer"></use></svg>Реферальная система</a></li>
+          <li class="site-nav__item"><a href="#" class="site-nav__link"><svg width="20" class="site-nav__symbol"><use xlink:href="#promo"></use></svg>Промо материалы</a></li>
+        </ul>
+      </div>
+      <div class="account-wrapper">
+        <header class="account-header">
+          <div class="account-user">
+            <div class="account-user__name">Arthur</div>
+            <div class="account-user__balance">12000.35<span class="account-user__unit"> USD</span></div>
+            <div class="account-user__balance">500200<span class="account-user__unit"> Руб.</span></div>
+          </div>
+          <ul class="account-nav">
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Отзывы</a></li>
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Поддержка</a></li>
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Настройки</a></li>
+            <li class="account-nav__item"><a href="#" class="account-nav__link">Выход</a></li>
+          </ul>
+        </header>
+        <div class="requisites">
+          <form class="requisites__form" action="#" method="get" autocomplete="off">
+            <div class="account-title">
+              Платежные реквизиты
+            </div>
+            <div class="requisites__inner">
+              <div class="requisites__upper">
+                <div class="requisites__input-wrap">
+                  <label for="default" class="requisites__input-label">Платежная система по-умолчанию</label>
+                  <input type="email" id="default" class="requisites__input" value="sample@domain.zn"/>
+                </div>
+                <div class="requisites__input-wrap">
+                  <label for="perfectMoney" class="requisites__input-label">Perfect money</label>
+                  <input type="text" id="perfectMoney" class="requisites__input" value="U12345678901234"/>
+                </div>
+                <div class="requisites__input-wrap">
+                  <label for="payeer" class="requisites__input-label">Payeer</label>
+                  <input type="text" id="payeer" class="requisites__input" value="USD1122334"/>
+                </div>
+                <div class="requisites__input-wrap">
+                  <label for="qiwi" class="requisites__input-label">Qiwi</label>
+                  <input type="email" id="qiwi" class="requisites__input" value="sample@domain.zn"/>
+                </div>
+                <div class="requisites__input-wrap requisites__input-wrap--tel">
+                  <label for="tel" class="requisites__input-label">Bitcoin</label>
+                  <input type="number" id="tel" class="requisites__input" value="1111111111111111111111"/>
+                </div>
+                <div class="requisites__input-wrap">
+                  <label for="qiwi2" class="requisites__input-label">Qiwi2</label>
+                  <input type="email" id="qiwi2" class="requisites__input" value="sample@domain.zn"/>
+                </div>
+              </div>
+              <button type="reset" class="requisites__button requisites__button--reset">Отмена</button>
+              <button type="submit" class="requisites__button requisites__button--submit">Сохранить изменения</button>
+            </div>
+          </form>
+        </div>
+        <footer class="footer footer_int">
+          <svg width="89" height="100" class="footer__logo"><use xlink:href="#logo"></use></svg>
+          <ul class="footer-links">
+            <li class="footer-links__item"><a href="#" class="footer-links__link">О компании</a></li>
+            <li class="footer-links__item"><a href="#" class="footer-links__link">Инвестиции</a></li>
+            <li class="footer-links__item"><a href="#" class="footer-links__link">Маркетинг</a></li>
+          </ul>
+          <ul class="footer-links">
+            <li class="footer-links__item"><a href="#" class="footer-links__link">Отзывы</a></li>
+            <li class="footer-links__item"><a href="#" class="footer-links__link">FAQ</a></li>
+            <li class="footer-links__item"><a href="#" class="footer-links__link">Новости</a></li>
+          </ul>
+          <div class="contacts">
+            <div class="contacts__item"><svg width="14" height="14" class="contacts__symbol"><use xlink:href="#place"></use></svg>14 Redbourn House Norbiton Road, London, England, E14 7TG</div>
+            <div class="contacts__item"><svg width="14" height="14" class="contacts__symbol"><use xlink:href="#phone"></use></svg>+7 812 600 15 00</div>
+            <a href="mailto:example@gmail.com" target="blank" class="contacts__item contacts__item_email"><svg width="14" height="14" class="contacts__symbol"><use xlink:href="#mail"></use></svg>example@gmail.com</a>
+          </div>
+          <div class="social-links">
+            <a class="social-links__link" href="#"><svg width="26" height="16" class="social-links__symbol"><use xlink:href="#vk"></use></svg>vkontakte</a>
+            <a class="social-links__link" href="#"><svg width="22" height="18" class="social-links__symbol"><use xlink:href="#twitter"></use></svg>twitter</a>
+            <a class="social-links__link" href="#"><svg width="30" height="30" class="social-links__symbol"><use xlink:href="#google-plus"></use></svg>twitter</a>
+            <a class="social-links__link" href="#"><svg width="22" height="19" class="social-links__symbol"><use xlink:href="#telegram"></use></svg>twitter</a>
+            <a class="social-links__link" href="#"><svg width="20" height="20" class="social-links__symbol"><use xlink:href="#instagram"></use></svg>twitter</a>
+            <a class="social-links__link" href="#"><svg width="20" height="20" class="social-links__symbol"><use xlink:href="#skype"></use></svg>twitter</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="scripts/wizard.min.js"></script>
+  </body>
+
+</html>
