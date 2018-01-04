@@ -57,6 +57,7 @@
     background: transparent;
     border: 1px solid $inputs-border;
     outline: none;
+    resize: none;
     
     &:focus {
       border-color: $nf-green;
