@@ -10,4 +10,17 @@
     width: 260px;
     flex-basis: 260px;
   }
+  
+  &__wrap {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 165px;
+    height: 100vh;
+    
+    &_int {
+      width: 260px;
+    }
+  }
 }
