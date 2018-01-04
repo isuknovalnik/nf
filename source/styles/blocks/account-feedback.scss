@@ -1,7 +1,5 @@
 .account-feedback {
-  padding-top: 70px;
-  padding-left: 129px;
-  padding-bottom: 28px;
+  padding: 70px 0 28px 129px;
   background: url('../images/background-account.jpg') no-repeat left top;
 
   &__upper {
@@ -61,6 +59,8 @@
   }
 
   &__form-text {
+    width: 922px;
+    height: 16px;
     border: 1px solid #dfdfdf;
     outline: none;
     background: transparent;
