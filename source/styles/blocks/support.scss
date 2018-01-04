@@ -1,0 +1,52 @@
+.support {
+  padding: 69px 0 378px 130px;
+  background: url('../images/background-account.jpg') no-repeat left top;
+
+  &__inner {
+    width: 947px;
+  }
+
+  &__form {
+    background-color: #fff;
+    padding: 20px 19px;
+    border-radius: 5px;
+    position: relative;
+    top: -3px;
+  }
+
+  &__message {
+    width: 881px;
+    height: 96px;
+    border: 1px solid #dfdfdf;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #2d3049;
+    font-family: $robotocond;
+    border-radius: 17px;
+    padding: 12px 10px;
+    padding-bottom: 18px;
+    margin-bottom: 17px;
+    &--theme {
+      height: 16px;
+      padding-top: 7px;
+      padding-bottom: 8px;
+      border-radius: 20px;
+    }
+  }
+
+  &__button {
+    display: block;
+    font-family: $robotocond;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(54,208,220,1), rgba(91,134,228,1));
+    @include box-shadow(0, 4px, 4px, rgba(159,224,239,1));
+    padding: 5px 59px;
+    margin-left: 708px;
+  }
+}
