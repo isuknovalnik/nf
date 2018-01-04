@@ -1,0 +1,42 @@
+.download-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  
+  &__link {
+    display: block;
+    font-size: 18px;
+    font-weight: 400px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $operations-color;
+
+    &:hover {
+      color: $nf-int;
+    }
+    
+    &:first-child {
+      margin-left: 8px;
+    }
+    
+    &:last-child {
+      margin-right: 8px;
+    }
+  }
+  
+  &__symbol {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-bottom: -2px;
+    fill: $download-links;
+  }
+  
+  &__link:hover &__symbol {
+    fill: $nf-int;
+  }
+}
+

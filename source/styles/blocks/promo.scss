@@ -1,0 +1,78 @@
+.promo {
+  position: relative;
+  display: block;
+  width: 1140px;
+  height: 430px;
+  padding-top: 50px;
+  margin-left: 130px;
+  
+  & .account-heading {
+    top: 50px;
+  }
+  
+  &__content-wrap {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: calc(100% - 50px);
+    margin-top: 50px;
+    border-radius: 5px;
+    color: $operations-color;
+    background-color: $inner-back;
+  }
+  
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 34px;
+  }
+
+  &__logo {
+    width: 243px;
+  }
+  
+  &__banner {
+    width: 240px;
+  }
+  
+  &__banner-wide {
+    width: 555px;
+  }
+  
+  &__banner-wide .download-links {
+    width: 240px;
+    margin: 0 auto;
+  }
+  
+  &__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 400px;
+  }
+  
+  &__pict {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    
+    &_logo {
+      width: 243px;
+      height: 243px;
+    }
+    
+    &_banner {
+      width: 240px;
+      height: 110px;
+    }
+    
+    &_banner-wide {
+      width: 555px;
+      height: 110px;
+    }
+  }
+}
