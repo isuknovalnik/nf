@@ -21,16 +21,41 @@
     width: 950px;
     margin: 0;
     padding: 0;
-    margin-left: 322px;
+    margin-left: 140px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
     color: $text-color;
-  
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.35%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 322px;
+    }
+    
     & p {
       margin: 0;
       padding: 0;
     }
+  }
+  
+  & .page-logo {
+    float: left;
+    margin-top: 15px;
+    margin-left: 141px;
+    margin-right: 33px;
+    margin-bottom: 28px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.05%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 323px;
+    }
+    
   }
   
   &__details {
@@ -44,12 +69,12 @@
       z-index: 1;
       display: block;
       content: '';
-      top: 104px;
+      top: -142px;
       left: 0;
       right: 0;
       height: 440px;
       transform: skewY(8deg);
-      transform-origin: 100%;
+      transform-origin: 0;
       background-color: $inner-back;
     }
   }
@@ -58,10 +83,18 @@
     position: relative;
     z-index: 2;
     min-height: 320px;
-    margin-left: 225px;
+    margin-left: 43px;
     background-repeat: no-repeat;
     background-position: left top;
     background-image: url('../images/hexagons.png');
+    
+    @media (min-width: $w1550) {
+      margin-left: 12.82%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 225px;
+    }
   }
   
   &__details .section-heading {
@@ -82,7 +115,15 @@
   &__principles {
     width: 970px;
     margin-top: 136px;
-    margin-left: 322px;
+    margin-left: 140px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.35%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 322px;
+    }
     
     & p {
       min-height: 48px;
@@ -127,12 +168,12 @@
       z-index: 1;
       display: block;
       content: '';
-      top: 76px;
+      top: -171px;
       left: 0;
       right: 0;
       height: 497px;
       transform: skewY(8deg);
-      transform-origin: 100%;
+      transform-origin: 0;
       background-color: $inner-back;
     }
   }
@@ -141,9 +182,17 @@
     position: relative;
     z-index: 2;
     display: flex;
-    width: 1100px;
+    width: 1040px;
     margin-top: 54px;
-    margin-left: 290px;
+    margin-left: 108px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 16.52%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 290px;
+    }
   }
   
   &__using-text {
@@ -152,22 +201,47 @@
     width: 950px;
     margin: 0;
     padding: 0;
-    margin-left: 322px;
+    margin-left: 140px;
     padding-top: 36px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.35%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 322px;
+    }
   }
   
   &__using .section-heading {
     position: relative;
     z-index: 2;
-    margin-left: 322px;
+    margin-left: 140px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.35%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 322px;
+    }
   }
   
   &__working {
+    width: 1040px;
     margin-top: 158px;
-    margin-left: 322px;
+    margin-left: 140px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.35%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 322px;
+    }
   }
   
   &__working-text {
@@ -188,12 +262,21 @@
   }
   
   &__training {
+    width: 1040px;
     min-height: 520px;
     margin-top: 47px;
-    margin-left: 321px;
+    margin-left: 140px;
     background-repeat: no-repeat;
     background-position: left 13px;
     background-image: url('../images/training.png');
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.29%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 321px;
+    }
   }
   
   &__training-wrap {
@@ -277,12 +360,12 @@
       z-index: 1;
       display: block;
       content: '';
-      top: 90px;
+      top: -155px;
       left: 0;
       right: 0;
       height: 290px;
       transform: skewY(8deg);
-      transform-origin: 100%;
+      transform-origin: 0;
       background-color: $inner-back;
     }
 
@@ -303,10 +386,18 @@
     position: relative;
     z-index: 2;
     width: 920px;
-    margin-left: 322px;
+    margin-left: 140px;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.35%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 322px;
+    }
     
     & p {
       margin: 0;
@@ -319,16 +410,17 @@
     position: relative;
     z-index: 2;
     width: 490px;
-    margin-left: 322px;
+    margin-left: 140px;
     margin-bottom: 18px;
     line-height: 44px;
-  }
-  
-  & .page-logo {
-    float: left;
-    margin-top: 15px;
-    margin-left: 323px;
-    margin-right: 33px;
-    margin-bottom: 28px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 18.35%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 322px;
+    }
+    
   }
 }
