@@ -1,6 +1,15 @@
 .account-feedback {
   padding: 70px 0 28px 129px;
-  background: url('../images/background-account.jpg') no-repeat left top;
+  padding-left: 0;
+  margin-left: 20px;
+
+  @media (min-width: $w1550) {
+    margin-left: 7.83%;
+  }
+
+  @media (min-width: $hd) {
+    margin-left: 130px;
+  }
 
   &__upper {
     margin-bottom: 36px;

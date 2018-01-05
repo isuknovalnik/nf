@@ -6,32 +6,32 @@
   height: 700px;
   padding-top: 50px;
   margin-left: 20px;
-  
+
   @media (min-width: $w1550) {
     margin-left: 7.83%;
   }
-  
+
   @media (min-width: $hd) {
     margin-left: 130px;
   }
-  
+
   &__section {
     position: relative;
     width: 100%;
-    
+
     &_system {
       height: 160px;
     }
-    
+
     &_level {
       height: 180px;
     }
-    
+
     &_users {
       height: 320px;
     }
   }
-  
+
   &__content-wrap {
     position: relative;
     z-index: 2;
@@ -42,17 +42,17 @@
     color: $ref-color;
     background-color: $inner-back;
   }
-  
+
   &__section_level &__content-wrap {
     height: calc(100% - 40px);
     margin-top: 40px;
   }
-  
+
   &__section_level .account-heading {
     height: 33px;
     padding-top: 13px;
   }
-  
+
   &__btn {
     display: block;
     width: 200px;
@@ -73,35 +73,35 @@
     background-size: 202px 32px;
     box-shadow: 0 6px 8px -4px $account-shadow;
     cursor: pointer;
-    
+
     &:hover {
       color: $nf-int;
       border-color: $nf-int;
       background: none;
     }
   }
-  
+
   &__level-heading {
     padding-top: 23px;
     margin-left: 20px;
     font-size: 18px;
     font-weight: 700;
   }
-  
+
   &__level-fund {
     padding-top: 20px;
     margin-left: 64px;
     font-size: 18px;
     font-weight: 400;
   }
-  
+
   &__level-bonus {
     padding-top: 20px;
     margin-left: 60px;
     font-size: 18px;
     font-weight: 400;
   }
-  
+
   &__system-wrap {
     display: flex;
     align-items: flex-end;
@@ -110,14 +110,14 @@
     margin: 0 auto 20px;
     padding-top: 24px;
   }
-  
+
   &__system-text {
     margin-right: 54px;
     padding-bottom: 1px;
     font-size: 18px;
     font-weight: 400;
   }
-  
+
   &__test-link {
     margin-right: 164px;
     padding-bottom: 1px;
@@ -128,7 +128,7 @@
     color: $nf-int;
     border-bottom: 1px solid $nf-int;
   }
-  
+
   &__ref-wrap {
     display: flex;
     justify-content: space-between;
@@ -136,13 +136,13 @@
     width: 730px;
     min-height: 30px;
   }
-  
+
   &__link-descr {
     padding-bottom: 1px;
     font-size: 18px;
     font-weight: 400;
   }
-  
+
   &__ref-link {
     margin-left: 26px;
     margin-right: 8px;
@@ -154,14 +154,14 @@
     color: $nf-int;
     border-bottom: 1px solid $nf-int;
   }
-  
+
   &__levels {
     display: flex;
     justify-content: space-between;
     width: 430px;
     margin-left: 20px;
   }
-  
+
   &__level {
     font-size: 18px;
     line-height: 18px;
@@ -170,7 +170,7 @@
     color: $nf-int;
     border-bottom: 1px solid $nf-int;
   }
-  
+
   & .account-pagination {
     margin-top: 28px;
     margin-left: 26px;

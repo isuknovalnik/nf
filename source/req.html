@@ -44,42 +44,44 @@
             <li class="account-nav__item"><a href="#" class="account-nav__link">Выход</a></li>
           </ul>
         </header>
-        <div class="requisites">
-          <form class="requisites__form" action="#" method="get" autocomplete="off">
-            <div class="account-title">
-              Платежные реквизиты
-            </div>
-            <div class="requisites__inner">
-              <div class="requisites__upper">
-                <div class="requisites__input-wrap">
-                  <label for="default" class="requisites__input-label">Платежная система по-умолчанию</label>
-                  <input type="email" id="default" class="requisites__input" value="sample@domain.zn"/>
-                </div>
-                <div class="requisites__input-wrap">
-                  <label for="perfectMoney" class="requisites__input-label">Perfect money</label>
-                  <input type="text" id="perfectMoney" class="requisites__input" value="U12345678901234"/>
-                </div>
-                <div class="requisites__input-wrap">
-                  <label for="payeer" class="requisites__input-label">Payeer</label>
-                  <input type="text" id="payeer" class="requisites__input" value="USD1122334"/>
-                </div>
-                <div class="requisites__input-wrap">
-                  <label for="qiwi" class="requisites__input-label">Qiwi</label>
-                  <input type="email" id="qiwi" class="requisites__input" value="sample@domain.zn"/>
-                </div>
-                <div class="requisites__input-wrap requisites__input-wrap--tel">
-                  <label for="tel" class="requisites__input-label">Bitcoin</label>
-                  <input type="number" id="tel" class="requisites__input" value="1111111111111111111111"/>
-                </div>
-                <div class="requisites__input-wrap">
-                  <label for="qiwi2" class="requisites__input-label">Qiwi2</label>
-                  <input type="email" id="qiwi2" class="requisites__input" value="sample@domain.zn"/>
-                </div>
+        <div class="account">
+          <div class="requisites">
+            <form class="requisites__form" action="#" method="get" autocomplete="off">
+              <div class="account-title">
+                Платежные реквизиты
               </div>
-              <button type="reset" class="requisites__button requisites__button--reset">Отмена</button>
-              <button type="submit" class="requisites__button requisites__button--submit">Сохранить изменения</button>
-            </div>
-          </form>
+              <div class="requisites__inner">
+                <div class="requisites__upper">
+                  <div class="requisites__input-wrap">
+                    <label for="default" class="requisites__input-label">Платежная система по-умолчанию</label>
+                    <input type="email" id="default" class="requisites__input" value="sample@domain.zn"/>
+                  </div>
+                  <div class="requisites__input-wrap">
+                    <label for="perfectMoney" class="requisites__input-label">Perfect money</label>
+                    <input type="text" id="perfectMoney" class="requisites__input" value="U12345678901234"/>
+                  </div>
+                  <div class="requisites__input-wrap">
+                    <label for="payeer" class="requisites__input-label">Payeer</label>
+                    <input type="text" id="payeer" class="requisites__input" value="USD1122334"/>
+                  </div>
+                  <div class="requisites__input-wrap">
+                    <label for="qiwi" class="requisites__input-label">Qiwi</label>
+                    <input type="email" id="qiwi" class="requisites__input" value="sample@domain.zn"/>
+                  </div>
+                  <div class="requisites__input-wrap requisites__input-wrap--tel">
+                    <label for="tel" class="requisites__input-label">Bitcoin</label>
+                    <input type="number" id="tel" class="requisites__input" value="1111111111111111111111"/>
+                  </div>
+                  <div class="requisites__input-wrap">
+                    <label for="qiwi2" class="requisites__input-label">Qiwi2</label>
+                    <input type="email" id="qiwi2" class="requisites__input" value="sample@domain.zn"/>
+                  </div>
+                </div>
+                <button type="reset" class="requisites__button requisites__button--reset">Отмена</button>
+                <button type="submit" class="requisites__button requisites__button--submit">Сохранить изменения</button>
+              </div>
+            </form>
+          </div>
         </div>
         <footer class="footer footer_int">
           <svg width="89" height="100" class="footer__logo"><use xlink:href="#logo"></use></svg>

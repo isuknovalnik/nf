@@ -44,16 +44,18 @@
             <li class="account-nav__item"><a href="#" class="account-nav__link">Выход</a></li>
           </ul>
         </header>
-        <div class="support">
-          <div class="support__inner">
-            <div class="account-title">
-              Поддержка
+        <div class="account">
+          <div class="support">
+            <div class="support__inner">
+              <div class="account-title">
+                Поддержка
+              </div>
+              <form class="support__form" action="#" method="get" autocomplete="off">
+                <input class="support__message support__message--theme" type="text" name="message-theme" value="Тема сообщения"/>
+                <textarea class="support__message" rows="6" cols="136" name="message">Текст сообщения</textarea>
+                <button type="submit" class="support__button">Отправить</button>
+              </form>
             </div>
-            <form class="support__form" action="#" method="get" autocomplete="off">
-              <input class="support__message support__message--theme" type="text" name="message-theme" value="Тема сообщения"/>
-              <textarea class="support__message" rows="6" cols="136" name="message">Текст сообщения</textarea>
-              <button type="submit" class="support__button">Отправить</button>
-            </form>
           </div>
         </div>
         <footer class="footer footer_int">

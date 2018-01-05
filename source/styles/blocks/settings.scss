@@ -7,26 +7,26 @@
   height: 640px;
   padding-top: 70px;
   margin-left: 20px;
-  
+
   @media (min-width: $w1550) {
     margin-left: 7.83%;
   }
-  
+
   @media (min-width: $hd) {
     margin-left: 130px;
   }
-  
+
   &__form {
     position: relative;
     width: 458px;
     height: 370px;
-    
+
     &_wide {
       width: 100%;
       height: 240px;
     }
   }
-  
+
   &__content-wrap {
     position: relative;
     z-index: 2;
@@ -37,7 +37,7 @@
     color: $inner-text-color;
     background-color: $inner-back;
   }
-  
+
   &__form-wrap {
     display: flex;
     justify-content: space-between;
@@ -48,14 +48,14 @@
     padding: 20px 0;
     border-bottom: 1px solid $account-border;
   }
-  
+
   &__col {
     width: 438px;
 
     &:last-child {
       width: 458px;
     }
-    
+
     &_short {
       width: 418px;
       margin: 0 auto;
@@ -63,46 +63,46 @@
       border-bottom: 1px solid $account-border;
     }
   }
-  
+
   &__input-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 30px;
-    
+
     &:first-child {
       margin-bottom: 20px;
     }
   }
-  
+
   &__label {
     font-size: 14px;
     font-weight: 400;
-    
+
     &_checkbox {
       width: 100%;
       height: 25px;
       padding-top: 7px;
     }
   }
-  
+
   &__col_short &__label_checkbox {
     margin-bottom: 20px;
   }
-  
+
   &__checkbox {
     display: none;
-    
+
     & + label {
       position: relative;
       display: block;
       cursor: pointer;
-      
+
       &:hover {
         color: $nf-int;
       }
-      
+
       &:before {
         display: block;
         position: absolute;
@@ -114,13 +114,13 @@
         border: 1px solid $account-border;
         border-radius: 50%;
       }
-      
+
       &:hover:before {
         border-color: $nf-int;
         box-shadow: 0 6px 8px -4px $account-shadow;
       }
     }
-    
+
     &:checked +label:before {
       border-color: transparent;
       background-image: linear-gradient(to right, $nf-int, $gradient-end-int);
@@ -129,12 +129,12 @@
       background-size: 32px 32px;
       box-shadow: 0 6px 8px -4px $account-shadow;
     }
-    
+
     &:checked +label:hover:before {
       background: none;
       border-color: $nf-int;
     }
-    
+
     &:checked +label:after {
       display: block;
       position: absolute;
@@ -147,13 +147,13 @@
       border-bottom: 2px solid $text-color;
       transform: rotate(-45deg);
     }
-    
+
     &:checked +label:hover:after {
       border-left: 2px solid $nf-int;
       border-bottom: 2px solid $nf-int;
     }
   }
-  
+
   &__input {
     width: 261px;
     height: 28px;
@@ -162,34 +162,34 @@
     text-align: center;
     border: 1px solid $account-border;
     border-radius: 15px;
-    
+
     &:focus {
       outline: none;
       color: $nf-int;
       border-color: $nf-int;
     }
-    
+
     &:disabled {
       color: $inner-text-color;
       background-color: transparent;
       border: 1px solid $account-border;
     }
-    
+
     &_short {
       width: 163px;
     }
-    
+
     &_security {
       width: 200px;
     }
   }
-  
+
   &__buttons-wrap {
     display: flex;
     width: 930px;
     margin: 20px 30px 0 15px;
   }
-  
+
   &__btn {
     display: block;
     width: 200px;
@@ -210,39 +210,39 @@
     background-size: 202px 32px;
     box-shadow: 0 6px 8px -4px $account-shadow;
     cursor: pointer;
-    
+
     &:hover {
       color: $nf-int;
       border-color: $nf-int;
       background: none;
     }
-    
+
     &_personal {
       width: 165px;
       background-size: 167px 32px;
     }
-    
+
     &_copy {
       width: 242px;
       background-size: 244px 32px;
     }
-    
+
     &_link {
       text-decoration: none;
       margin-left: 50px;
       margin-right: 316px;
     }
-    
+
     &_security {
       margin-top: 20px;
       margin-left: 238px;
     }
   }
-  
+
   select::-ms-expand {
     display: none;
   }
-  
+
   &__select {
     display: block;
     -webkit-appearance: none;
@@ -267,29 +267,29 @@
     background-size: 28px 28px;
     background-image: url('../images/select-arrow.png');
   }
-  
+
   &__section {
     position: relative;
     width: 488px;
     height: 220px;
   }
-  
+
   &__section &__content-wrap {
     display: flex;
   }
-  
+
   &__section-wrap {
     margin-top: 20px;
     margin-left: 19px;
     margin-right: 74px;
   }
-  
+
   &__title {
     font-size: 14px;
     font-weight: 400;
     line-height: 27px;
   }
-  
+
   &__auth-value {
     width: 242px;
     margin: 22px 0 20px;
@@ -303,7 +303,7 @@
     border: 1px solid $account-border;
     border-radius: 15px;
   }
-  
+
   &__auth-qr {
     display: block;
     width: 120px;
