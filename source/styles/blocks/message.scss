@@ -1,15 +1,23 @@
 .message {
   display: block;
+  width: 1140px;
   margin-bottom: 80px;
+  margin-left: 60px;
+  
+  @media (min-width: $w1550) {
+    margin-left: 12.76%;
+  }
+    
+  @media (min-width: $hd) {
+    margin-left: 224px;
+  }
   
   &__form {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 1140px;
     height: 150px;
-    margin-left: 224px;
-  }
+}
   
   &__wrap {
     width: 360px;
@@ -43,7 +51,7 @@
   }
   
   &__text {
-    width: 732px;
+    width: 730px;
     height: 74px;
     padding: 0;
     margin: 0;
@@ -88,7 +96,7 @@
   }
   
     & .section-heading {
-      margin-left: 644px;
+      margin-left: 420px;
       margin-bottom: 42px;
     }
 }

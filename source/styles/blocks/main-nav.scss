@@ -19,6 +19,10 @@
     width: 165px;
     height: 100vh;
     
+    @media (min-width: $hd-w) {
+      left: calc((100% - 1920px)/2);
+    }
+    
     &_int {
       width: 260px;
     }

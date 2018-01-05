@@ -2,14 +2,23 @@
   position: relative;
   z-index: 2;
   display: block;
-  width: 100%;
+  width: 1140px;
   min-height: 1800px;
   background: transparent;
+  margin-left: 60px;
+    
+  @media (min-width: $w1550) {
+    margin-left: 12.25%;
+  }
+
+  @media (min-width: $hd) {
+    margin-left: 215px;
+  }
   
   &__intro {
     width: 848px;
     height: 369px;
-    margin-left: 420px;
+    margin-left: 205px;
     font-size: 18px;
     line-height: 27px;
     font-weight: 300;
@@ -32,7 +41,7 @@
   
   &__timeline {
     position: relative;
-    margin-left: 420px;
+    margin-left: 205px;
     margin-bottom: 148px;
     
     &:before {
@@ -64,7 +73,8 @@
   
   &__lower-wrap {
     display: flex;
-    margin-left: 215px;
+    width: 1140px;
+    margin-left: 0;
   }
   
   &__logo {
@@ -101,6 +111,6 @@
   & .section-heading {
     padding-top: 9px;
     padding-bottom: 9px;
-    margin-left: 322px;
+    margin-left: 107px;
   }
 }

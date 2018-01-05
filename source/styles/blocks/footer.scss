@@ -16,10 +16,18 @@
   &__logo {
     width: 89px;
     height: 100px;
-    margin-left: 427px;
+    margin-left: 225px;
     margin-top: 50px;
     margin-right: 68px;
     fill: $footer-icons;
+    
+    @media (min-width: $w1550) {
+      margin-left: 22.24%;
+    }
+    
+    @media (min-width: $hd) {
+      margin-left: 427px;
+    }
   }
   
   &_int &__logo {
