@@ -1,3 +1,5 @@
 .account-wrapper {
-  width: 1660px;
+  max-width: 1660px;
+  min-width: 1180px;
+  width: calc(100% - 260px);
 }

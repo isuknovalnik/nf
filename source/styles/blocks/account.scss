@@ -18,7 +18,7 @@
       display: block;
       content: 'Скопировано';
       top: -50px;
-      left: 420px;
+      left: 350px;
       width: 200px;
       padding: 0;
       margin: 0;
@@ -30,6 +30,10 @@
       border: 1px solid $nf-green;
       border-radius: 15px;
       box-shadow: 0 0 10px 0 $nf-green;
+      
+      @media (min-width: $w1550) {
+        left: 420px;
+      }
     }
   }
   
@@ -42,7 +46,7 @@
       display: block;
       content: 'Ошибка копирования';
       top: -50px;
-      left: 420px;
+      left: 350px;
       width: 240px;
       padding: 0;
       margin: 0;
@@ -54,6 +58,10 @@
       border: 1px solid $error-message;
       border-radius: 15px;
       box-shadow: 0 0 10px 0 $error-message;
+      
+      @media (min-width: $w1550) {
+        left: 420px;
+      }
     }
   }
 }

@@ -1,5 +1,8 @@
 .page {
-  width: $hd;
+  min-width: 1440px;
+  width: 100%;
+  max-width: $hd;
+  margin: 0 auto;
   font-family: $robotocond;
   font-size: 18px;
   color: $text-color;

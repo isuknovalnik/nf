@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  width: $hd;
+  width: 100%;
   min-height: 200px;
   margin: 0;
   padding: 0;
@@ -9,7 +9,7 @@
   background-color: $footer-back;
   
   &_int {
-    width: 100%;
+    // - width: 100%;
     min-height: 150px;
   }
   
@@ -23,8 +23,16 @@
   }
   
   &_int &__logo {
-    margin-left: 167px;
+    margin-left: 57px;
     margin-top: 30px;
+    
+    @media (min-width: $w1550) {
+      margin-left: 10.06%;
+    }
+    
+    @media (min-width: $hd) {
+      margin-left: 167px;
+    }
   }
   
   &_int .footer-links {

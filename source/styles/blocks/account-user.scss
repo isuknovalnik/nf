@@ -3,12 +3,21 @@
   flex-direction: column;
   width: 140px;
   height: 87px;
-  margin-left: 129px;
-  margin-right: 527px;
+  margin-left: 100px;
+  margin-right: 445px;
   padding-top: 13px;
   font-family: $segoeui;
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
   color: $account-user-text;
+  
+  @media (min-width: $w1550) {
+    margin-left: 7.83%;
+    margin-right: 526px;
+  }
+  
+  @media (min-width: $hd) {
+    margin-left: 130px;
+  }
 }

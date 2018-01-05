@@ -3,8 +3,16 @@
   display: block;
   width: 1140px;
   height: 660px;
+  margin-left: 20px;
   padding-top: 50px;
-  margin-left: 130px;
+  
+  @media (min-width: $w1550) {
+    margin-left: 7.83%;
+  }
+  
+  @media (min-width: $hd) {
+    margin-left: 130px;
+  }
   
   & .account-heading {
     top: 50px;
