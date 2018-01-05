@@ -2,72 +2,77 @@
   .title {
     text-transform: uppercase;
   }
-}
 
-.faq__inner {
-  display: flex;
-}
+  &__inner {
+    display: flex;
+  }
 
-.faq__left {
-  width: 360px;
-}
+  &__left {
+    width: 360px;
+  }
 
-.faq__questions-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+  &__questions-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.faq__questions-link {
-  font-weight: 300;
-  font-size: 18px;
-  width: 100%;
-  text-decoration: none;
-  display: block;
-  color: #fff;
-  padding-bottom: 9px;
-  margin-bottom: 21px;
-  word-wrap: break-word;
-  position: relative;
-  &:hover,
-  &--active {
-    @include text-shadow(3px, 3px, 3px, rgba(82,211,135,0.7));
-    background: linear-gradient(to right, transparent, rgba(82,211,135,0.3));
-    &:after {
-      content: '';
-      display: block;
-      width: 2px;
-      height: 100%;
-      background-color: rgba(82,211,135,1);
-      position: absolute;
-      right: 0;
-      top: 0;
+  &__questions-link {
+    font-weight: 300;
+    font-size: 18px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding-bottom: 9px;
+    margin-bottom: 21px;
+    word-wrap: break-word;
+    position: relative;
+    &--active {
+      @include text-shadow(3px, 3px, 3px, rgba(82,211,135,0.7));
+      background: linear-gradient(to right, transparent, rgba(82,211,135,0.3));
+      &:after {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 100%;
+        background-color: rgba(82,211,135,1);
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+    &:hover {
+      @include text-shadow(3px, 3px, 3px, rgba(82,211,135,0.7));
     }
   }
-}
 
-.faq__right {
-  flex-grow: 1;
-}
+  &__right {
+    flex-grow: 1;
+  }
 
-.faq__answers {
-  width: 516px;
-  color: #000;
-  background-color: #fff;
-  padding: 2px 20px 7px;
-  margin-left: 31px;
-  @include box-shadow(3px, 3px, 5px, rgba(82,211,135,0.5));
-}
+  &__answer {
+    width: 516px;
+    color: #000;
+    background-color: #fff;
+    padding: 2px 20px 7px;
+    margin-left: 31px;
+    @include box-shadow(3px, 3px, 5px, rgba(82,211,135,0.5));
+    &--hidden {
+      display: none;
+    }
+  }
 
-.faq__answers-title {
-  font-weight: 700;
-  font-size: 32px;
-  margin-top: 14px;
-  margin-bottom: 10px;
-}
+  &__answer-title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+  }
 
-.faq__answers-info {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 27px;
+  &__answer-info {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }

@@ -71,6 +71,7 @@
     font-family: $robotocond;
     margin-top: 9px;
     margin-bottom: 3px;
+    resize: none;
   }
 
   &__button {
@@ -87,6 +88,12 @@
     position: absolute;
     top: 21px;
     right: 20px;
+    &:hover {
+      padding: 3px 56px;
+      color: $nf-int;
+      border: 1px solid $nf-int;
+      background: #fff;
+    }
   }
 
   .account-pagination {

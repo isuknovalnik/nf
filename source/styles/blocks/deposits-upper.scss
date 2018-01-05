@@ -169,7 +169,7 @@
     font-family: $robotocond;
     font-size: 18px;
     color: #fff;
-    border: none;
+    border: 1px solid transparent;
     outline: none;
     padding: 5px 0;
     border-radius: 20px;
@@ -179,11 +179,16 @@
     &--reset {
       padding-left: 53px;
       padding-right: 53px;
-      margin-right: 24px;
+      margin-right: 20px;
     }
     &--submit {
       padding-left: 122px;
       padding-right: 122px;
+    }
+    &:hover {
+      color: $nf-int;
+      border: 1px solid $nf-int;
+      background: none;
     }
   }
 }

@@ -64,15 +64,27 @@
     font-size: 24px;
     font-weight: 700;
     border-radius: 30px;
-    cursor: pointed;
+    cursor: pointer;
     background: linear-gradient(to right, rgba(54,208,220,1), rgba(91,134,228,1));
     @include box-shadow(0, 4px, 4px, rgba(159,224,239,1));
+    &:hover {
+      padding: 16px 34px;
+      color: $nf-int;
+      border: 1px solid $nf-int;
+      background: none;
+    }
   }
 
   &--green {
     .balance-form__deposit-submit {
       background: linear-gradient(to right, rgba(168,224,99,1), rgba(101,179,65,1));
       @include box-shadow(0, 4px, 4px, rgba(202,233,171,1));
+      &:hover {
+        padding: 16px 34px;
+        color: rgba(95,176,57,1);
+        border: 1px solid rgba(95,176,57,1);
+        background: #fff;
+      }
     }
   }
 }

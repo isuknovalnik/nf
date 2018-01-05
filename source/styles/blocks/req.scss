@@ -67,7 +67,7 @@
 
   &__button {
     font-family: $robotocond;
-    border: none;
+    border: 1px solid transparent;
     outline: none;
     color: #fff;
     font-size: 14px;
@@ -75,9 +75,15 @@
     cursor: pointer;
     background: linear-gradient(to right, rgba(54,208,220,1), rgba(91,134,228,1));
     @include box-shadow(0, 4px, 4px, rgba(159,224,239,1));
+    &:hover {
+      color: $nf-int;
+      border: 1px solid $nf-int;
+      background: none;
+      padding: 7px 58px;
+    }
     &--reset {
       padding: 7px 58px;
-      margin-right: 28px;
+      margin-right: 24px;
       margin-left: 178px;
     }
     &--submit {

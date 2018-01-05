@@ -12,7 +12,12 @@
   .account-title {
     padding-top: 14px;
     padding-bottom: 17px;
-    background: linear-gradient(to bottom, rgba(144,208,83,1), rgba(111,186,64,1));
+  }
+
+  .balance-form {
+    .account-title {
+      background: linear-gradient(to bottom, rgba(144,208,83,1), rgba(111,186,64,1));
+    }
   }
 
   &__table--hidden {

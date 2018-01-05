@@ -34,5 +34,10 @@
     position: absolute;
     right: 19px;
     top: 8px;
+    &:hover {
+      color: $nf-int;
+      border-color: $nf-int;
+      background: #fff;
+    }
   }
 }

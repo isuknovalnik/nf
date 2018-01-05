@@ -131,6 +131,11 @@
       top: 93px;
       left: 3px;
     }
+    &:hover {
+      color: $nf-int;
+      border: 1px solid $nf-int;
+      background: none;
+    }
   }
 
   &--green {
@@ -160,6 +165,12 @@
       &__round {
         background: linear-gradient(to right, rgba(167,223,99,1), rgba(95,176,57,1));
         @include box-shadow(0, 4px, 4px, rgba(204,234,173,1));
+        &:hover {
+          color: rgba(95,176,57,1);
+          border: 1px solid rgba(95,176,57,1);
+          background: #fff;
+          @include box-shadow(0, 10px, 15px, rgba(219,240,197,1));
+        }
       }
     }
   }
