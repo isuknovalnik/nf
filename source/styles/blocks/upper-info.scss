@@ -1,7 +1,15 @@
 .upper-info {
-  padding-left: 325px;
+  margin-left: 110px;
   width: 936px;
   margin-bottom: 100px;
+
+  @media (min-width: $w1550) {
+    margin-left: 18.35%;
+  }
+
+  @media (min-width: $hd) {
+    margin-left: 325px;
+  }
 
   .page-logo {
     float: left;

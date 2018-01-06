@@ -1,7 +1,8 @@
 .invest {
   background: #071525 url('../images/background.png') no-repeat 100% 0;
+  background-size: cover;
   padding-top: 143px;
-  width: 1756px;
+  width: 100%;
   position: relative;
   &__section-heading {
     font-size: 36px;

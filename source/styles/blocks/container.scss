@@ -1,8 +1,16 @@
 .container {
   display: block;
-  width: 1756px;
+  width: 100%;
   background: #071525 url('../images/background.png') no-repeat 100% 0;
-  padding: 120px 0 45px 322px;
+  padding: 120px 0 45px 40px;
   font-family: $robotocond;
   font-weight: 400;
+
+  @media (min-width: $w1550) {
+    padding-left: 12%;
+  }
+
+  @media (min-width: $hd) {
+    padding-left: 322px;
+  }
 }
