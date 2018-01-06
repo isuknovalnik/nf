@@ -1,14 +1,20 @@
 .payment {
   padding-bottom: 70px;
   padding-top: 128px;
+  padding-left: 110px;
   position: relative;
   background: url('../images/payment_bgr.png') no-repeat 100% 0;
+  background-size: cover;
   position: relative;
   margin-top: -520px;
   z-index: 4000;
 
-  &__inner {
-    padding: 0 484px 0 323px
+  @media (min-width: $w1550) {
+    padding-left: 18.35%;
+  }
+
+  @media (min-width: $hd) {
+    padding-left: 323px;
   }
 
   &__sistems-text {
@@ -19,6 +25,7 @@
 
   &__options {
     margin-bottom: 44px;
+    width: 950px;
   }
 
   &__options-item {

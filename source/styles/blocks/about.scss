@@ -5,11 +5,11 @@
   background: url('../images/background-about.png') left 904px no-repeat,
     url('../images/background-top.jpg') left top no-repeat,
     url('../images/background-about-bottom.jpg') left 1850px no-repeat;
-  
+
   &__header {
     min-height: 380px;
     margin-top: 128px;
-    
+
     &:after {
       content: '';
       display: table;
@@ -26,7 +26,7 @@
     line-height: 22px;
     font-weight: 400;
     color: $text-color;
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.35%;
     }
@@ -34,20 +34,20 @@
     @media (min-width: $hd) {
       margin-left: 322px;
     }
-    
+
     & p {
       margin: 0;
       padding: 0;
     }
   }
-  
+
   & .page-logo {
     float: left;
     margin-top: 15px;
     margin-left: 141px;
     margin-right: 33px;
     margin-bottom: 28px;
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.05%;
     }
@@ -55,15 +55,15 @@
     @media (min-width: $hd) {
       margin-left: 323px;
     }
-    
+
   }
-  
+
   &__details {
     position: relative;
     min-height: 320px;
     margin-top: 123px;
     color: $inner-text-color;
-    
+
     &:before {
       position: absolute;
       z-index: 1;
@@ -78,7 +78,7 @@
       background-color: $inner-back;
     }
   }
-  
+
   &__details-wrap {
     position: relative;
     z-index: 2;
@@ -87,7 +87,7 @@
     background-repeat: no-repeat;
     background-position: left top;
     background-image: url('../images/hexagons.png');
-    
+
     @media (min-width: $w1550) {
       margin-left: 12.82%;
     }
@@ -96,12 +96,12 @@
       margin-left: 225px;
     }
   }
-  
+
   &__details .section-heading {
     padding-top: 65px;
     padding-left: 438px;
   }
-  
+
   &__details-text {
     width: 634px;
     padding-top: 22px;
@@ -111,12 +111,12 @@
     line-height: 27px;
     color: $inner-text-color;
   }
-  
+
   &__principles {
     width: 970px;
     margin-top: 136px;
     margin-left: 140px;
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.35%;
     }
@@ -124,7 +124,7 @@
     @media (min-width: $hd) {
       margin-left: 322px;
     }
-    
+
     & p {
       min-height: 48px;
       margin: 0;
@@ -137,18 +137,18 @@
       line-height: 22px;
       font-weight: 400;
       background-repeat: no-repeat;
-      
+
       &:nth-child(1) {
         margin-top: 34px;
         background-position: 12px top;
         background-image: url('../images/principle1.png');
       }
-      
+
       &:nth-child(2) {
         background-position: 14px top;
         background-image: url('../images/principle2.png');
       }
-      
+
       &:nth-child(3) {
         padding-top: 2px;
         background-position: 10px top;
@@ -156,13 +156,13 @@
       }
     }
   }
-  
+
   &__using {
     position: relative;
     min-height: 340px;
     margin-top: 175px;
     color: $inner-text-color;
-    
+
     &:before {
       position: absolute;
       z-index: 1;
@@ -177,7 +177,7 @@
       background-color: $inner-back;
     }
   }
-  
+
   &__using-wrap {
     position: relative;
     z-index: 2;
@@ -185,7 +185,7 @@
     width: 1040px;
     margin-top: 54px;
     margin-left: 108px;
-    
+
     @media (min-width: $w1550) {
       margin-left: 16.52%;
     }
@@ -194,7 +194,7 @@
       margin-left: 290px;
     }
   }
-  
+
   &__using-text {
     position: relative;
     z-index: 2;
@@ -206,7 +206,7 @@
     font-size: 18px;
     line-height: 22px;
     font-weight: 400px;
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.35%;
     }
@@ -215,12 +215,12 @@
       margin-left: 322px;
     }
   }
-  
+
   &__using .section-heading {
     position: relative;
     z-index: 2;
     margin-left: 140px;
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.35%;
     }
@@ -229,12 +229,12 @@
       margin-left: 322px;
     }
   }
-  
+
   &__working {
     width: 1040px;
     margin-top: 158px;
     margin-left: 140px;
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.35%;
     }
@@ -243,24 +243,24 @@
       margin-left: 322px;
     }
   }
-  
+
   &__working-text {
     width: 1010px;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400px;
-    
+
     & p {
       margin: 0;
       padding: 0;
       padding-bottom: 28px;
-      
+
       &:first-child {
         padding-top: 42px;
       }
     }
   }
-  
+
   &__training {
     width: 1040px;
     min-height: 520px;
@@ -269,7 +269,7 @@
     background-repeat: no-repeat;
     background-position: left 13px;
     background-image: url('../images/training.png');
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.29%;
     }
@@ -278,7 +278,7 @@
       margin-left: 321px;
     }
   }
-  
+
   &__training-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -288,7 +288,7 @@
     height: 320px;
     margin-top: 60px;
   }
-  
+
   &__training-item {
     margin: 0;
     padding: 0;
@@ -296,65 +296,65 @@
     line-height: 22px;
     font-weight: 400px;
     color: $nf-green;
-    
+
     &:nth-child(1) {
       margin-left: 36px;
     }
-    
+
     &:nth-child(2) {
       width: 140px;
       margin-top: 20px;
       margin-left: 273px;
       text-align: center;
     }
-    
+
     &:nth-child(3) {
       margin-top: 94px;
       margin-left: 64px;
     }
-    
+
     &:nth-child(4) {
       margin-left: 123px;
     }
-    
+
     &:nth-child(5) {
       margin-top: 84px;
       margin-left: 121px;
     }
-    
+
     &:nth-child(6) {
       width: 94px;
       margin-top: 144px;
       margin-left: 188px;
       text-align: center;
     }
-    
+
     &:nth-child(7) {
       margin-top: 168px;
       margin-left: 55px;
     }
-    
+
     &:nth-child(8) {
       margin-top: 74px;
       margin-left: 18px;
     }
-    
+
     &:nth-child(9) {
       margin-top: 28px;
       margin-left: 41px;
     }
   }
-  
+
   &__training .section-heading {
     margin-left: 251px;
   }
-  
+
   &__conclusion {
     position: relative;
     min-height: 437px;
     margin-top: 77px;
     color: $inner-text-color;
-    
+
     &:before {
       position: absolute;
       z-index: 1;
@@ -381,7 +381,7 @@
       background-color: $inner-back;
     }
   }
-  
+
   &__conclusion-text {
     position: relative;
     z-index: 2;
@@ -390,7 +390,7 @@
     font-size: 18px;
     line-height: 21px;
     font-weight: 400px;
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.35%;
     }
@@ -398,14 +398,14 @@
     @media (min-width: $hd) {
       margin-left: 322px;
     }
-    
+
     & p {
       margin: 0;
       padding: 0;
       margin-bottom: 3px;
     }
   }
-  
+
   &__conclusion .section-heading {
     position: relative;
     z-index: 2;
@@ -413,7 +413,7 @@
     margin-left: 140px;
     margin-bottom: 18px;
     line-height: 44px;
-    
+
     @media (min-width: $w1550) {
       margin-left: 18.35%;
     }
@@ -421,6 +421,6 @@
     @media (min-width: $hd) {
       margin-left: 322px;
     }
-    
+
   }
 }

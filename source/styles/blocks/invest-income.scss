@@ -1,11 +1,22 @@
 .invest-income {
   background: url('../images/invest_income_bgr.png') no-repeat 100% 0;
   position: relative;
-  padding: 145px 0 362px 318px;
+  padding: 195px 0 362px 0;
+  padding-left: 108px;
   color: #000;
   font-size: 18px;
   top: -145px;
   z-index: 5000;
+
+  @media (min-width: $w1550) {
+    padding-top: 165px;
+    padding-left: 18.35%;
+  }
+
+  @media (min-width: $hd) {
+    padding-top: 145px;
+    padding-left: 318px;
+  }
 
   &__wrapper {
     display: flex;

@@ -3,12 +3,29 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding-left: 295px;
+  margin-left: 80px;
   width: 1070px;
   flex-wrap: wrap;
+
+  @media (min-width: $w1550) {
+    margin-left: 16.5%;
+  }
+
+  @media (min-width: $hd) {
+    margin-left: 295px;
+  }
+
   &--bottom {
     margin-top: 245px;
-    padding-left: 292px;
+    margin-left: 80px;
+
+    @media (min-width: $w1550) {
+      margin-left: 16%;
+    }
+
+    @media (min-width: $hd) {
+      margin-left: 292px;
+    }
   }
 
   &__card {
